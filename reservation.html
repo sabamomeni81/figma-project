@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Rent</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+  <body>
+    <!-- #region blog -->
+    <div class="w-[100%] h-[450px] bg-blog relative">
+      <!-- #region header-->
+      <div
+        class="flex justify-between items-center w-[1224px] h-[96px] rounded-b-2xl bg-white mx-auto px-8"
+      >
+        <a class="block" href="index.html"
+          ><img src="./public/image/header/Logo.png" alt=""
+        /></a>
+        <div class="flex gap-10 items-center">
+          <a class="block" href="reservation.html"
+            ><p class="text-[#353535] font-EsRegular">رزرو خودرو</p></a
+          >
+          <a class="block" href="#"
+            ><p class="text-[#353535] font-EsRegular">خدمات ما</p></a
+          >
+          <a class="block" href="blog.html"
+            ><p class="text-[#353535] font-EsRegular">بلاگ</p></a
+          >
+          <a class="block" href="#"
+            ><p class="text-[#353535] font-EsRegular">درباره ما</p></a
+          >
+          <a class="block" href="#"
+            ><p class="text-[#353535] font-EsRegular">تماس با ما</p></a
+          >
+          <img src="./public/svg/search.svg" alt="" />
+        </div>
+        <div
+          class="flex justify-center items-center py-1 px-4 rounded-lg w-28 h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
+        >
+          ورود / ثبت‌نام
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region reserv-->
+      <h3
+        class="w-[200px] absolute top-[180px] left-reserv-head text-[34px] text-[#FDB713] font-Esbold"
+      >
+        اجاره خودرو
+      </h3>
+      <div
+        class="flex items-center justify-center gap-[6px] w-[300px] ml-2.5 mt-2 absolute top-[225px] left-reserv-auto"
+      >
+        <span class="font-EsExtraLight text-white text-[14px]">اتورنت</span>
+        <img src="./public/svg/arrow-left-blog.svg" alt="" />
+        <span class="font-EsExtraLight text-white text-[14px]">
+          لیست خودروهای اجاره ای
+        </span>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+    <!-- #region reserv-khodro -->
+    <div
+      class="flex gap-[24px] w-[1200px] h-[2241px] absolute top-[510px] left-reserv-center"
+    >
+      <div class="flex flex-col gap-[20px] w-[703px] h-full">
+        <div
+          class="flex flex-col gap-[9px] w-full h-[128px] bg-white rounded-[14px] p-6"
+        >
+          <div
+            class="flex items-center justify-between w-full h-[41px] border-bottom-rental"
+          >
+            <div class="flex flex-col gap-1">
+              <p class="text-[#353535] text-[23px] font-EsSemiBold">بنز s500</p>
+
+              <img
+                class="w-[40px] h-[3px]"
+                src="./public/image/rental-list/underline.png"
+                alt=""
+              />
+            </div>
+            <img
+              class="w-[120px] h-[24px]"
+              src="./public/image/rental-list/Rate.png"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center gap-2 w-full h-[30px]">
+            <div
+              class="flex items-center gap-2 w-[170px] h-full bg-[#F9F9F9] rounded-[8px] p-1"
+            >
+              <img src="./public/svg/tick.svg" alt="" />
+              <p class="text-[12px] text-[#353535] font-EsRegular">
+                حداقل سن راننده: 25 سال
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-2 w-[140px] h-full bg-[#F9F9F9] rounded-[8px] p-1"
+            >
+              <img src="./public/svg/tick.svg" alt="" />
+              <p class="text-[12px] text-[#353535] font-EsRegular">
+                تعداد سرنشین: 4 نفر
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-2 w-[147px] h-full bg-[#F9F9F9] rounded-[8px] p-1"
+            >
+              <img src="./public/svg/tick.svg" alt="" />
+              <p class="text-[12px] text-[#353535] font-EsRegular">
+                چمدان: 2 چمدان بزرگ
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[600px] rounded-[14px]">
+          <!-- #region swiper-->
+          <!-- Swiper -->
+
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper2"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s5000big.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500in.png " />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500in-2.png " />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500-front.png " />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500-back.png" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s5000big.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500in.png " />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500in-2.png " />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500-front.png " />
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/image/rental-list/s500-back.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- #endregion -->
+        </div>
+
+        <div class="w-full h-[468px] bg-amber-400"></div>
+      </div>
+
+      <div class="flex flex-col gap-[20px] w-[496px] h-full">
+        <div
+          class="flex flex-col gap-[24px] w-full h-[771px] bg-amber-200 rounded-[14px] p-[24px]"
+        ></div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region footer-->
+    <div
+      class="flex flex-col mt-10 items-center absolute gap-4 top-[3382px] left-image rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+    >
+      <div
+        class="flex items-center gap-[81px] w-[1120px] h-[101px] footer-border rounded-2xl p-4"
+      >
+        <div
+          class="flex gap-4 items-center py-4 pr-9 w-[254.66665649414062px] h-[69px]"
+        >
+          <img src="./public/image/footer/call.png" alt="" />
+          <div
+            class="flex flex-col gap-3 text-center pt-2 justify-center items-center"
+          >
+            <p
+              class="w-[113px] h-[28px] text-[#FFFBFB] text-[14px] font-EsRegular"
+            >
+              ارتباط با ما
+            </p>
+            <p
+              class="w-[111px] h-[28px] text-[#FFFBFB] text-[13px] font-EsRegular"
+            >
+              ۰۹۱۲-۲۱۳۲۶۵۴۵
+            </p>
+          </div>
+        </div>
+        <img src="./public/svg/devider-footer.svg" alt="" />
+        <div
+          class="flex gap-4 items-center py-4 pr-9 w-[254.66665649414062px] h-[69px]"
+        >
+          <img src="./public/image/footer/email.png" alt="" />
+          <div
+            class="flex flex-col gap-3 text-center pt-2 justify-center items-center"
+          >
+            <p
+              class="w-[113px] h-[28px] text-[#FFFBFB] text-[14px] font-EsRegular"
+            >
+              ایمیل
+            </p>
+            <p
+              class="w-[111px] h-[28px] text-[#FFFBFB] text-[13px] font-EsRegular"
+            >
+              autorent@info.com
+            </p>
+          </div>
+        </div>
+        <img src="./public/svg/devider-footer.svg" alt="" />
+        <div
+          class="flex gap-4 items-center py-4 pr-9 w-[254.66665649414062px] h-[69px]"
+        >
+          <img src="./public/image/footer/address.png" alt="" />
+          <div
+            class="flex flex-col gap-3 text-center pt-2 justify-center items-center"
+          >
+            <p
+              class="w-[113px] h-[28px] text-[#FFFBFB] text-[14px] font-EsRegular"
+            >
+              آدرس
+            </p>
+            <p
+              class="w-[111px] h-[28px] text-[#FFFBFB] text-[13px] font-EsRegular"
+            >
+              تهران- خ شادمان
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- #region autorent-->
+
+      <div class="flex items-center footer-bottom gap-4 w-[1120px] h-[233px]">
+        <div class="flex w-[1115px] gap-[88px] h-[168px]">
+          <div class="flex flex-col pr-[98px] gap-6 w-[407px] h-[168px]">
+            <img
+              class="w-[151.28px] h-[59px]"
+              src="./public/image/footer/Logo.png"
+              alt=""
+            />
+            <p
+              class="w-[370px] h-[85px] text-right text-[#FFFFFF] leading-6 text-[13px] font-EsExtraLight"
+            >
+              اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+              ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+              تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+            </p>
+          </div>
+          <div class="flex flex-col pt-2 pr-8 gap-6 w-[134px] h-[156px]">
+            <p class="text-[12px] text-[#FFFFFF] font-EsRegular">دسترسی آسان</p>
+            <p class="text-[12px] text-[#FFFFFF] font-EsRegular">
+              سوالات متداول
+            </p>
+            <p class="text-[12px] text-[#FFFFFF] font-EsRegular">تماس با ما</p>
+            <p class="text-[12px] text-[#FFFFFF] font-EsRegular">درباره ما</p>
+          </div>
+          <div class="flex flex-col my-[44px] gap-3 w-[320px] h-[80px]">
+            <p class="text-[#FFFFFF] text-[15px] font-EsRegular">خبرنامه</p>
+            <div
+              class="flex items-center w-[320px] footer-border p-2 rounded-lg h-[40px]"
+            >
+              <p
+                class="flex items-center w-[234px] h-[32px] text-[#FFFFFF] text-[11px] font-EsThin"
+              >
+                ایمیل خود را وارد کنید
+              </p>
+              <div
+                class="flex items-center justify-center py-4 px-3 bg-[#FDB713] rounded-[6px] w-[66px] h-[32px] text-[#212121] text-[12px] font-EsSemiBold"
+              >
+                ارسال
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 mt-6 w-[315px] h-[25px]">
+        <img src="./public/svg/cc-footer.svg" alt="" />
+        <p class="text-[#9A9A9A] text-[13px] font-EsRegular">
+          تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+        </p>
+      </div>
+      <!-- #endregion -->
+    </div>
+
+    <!-- #endregion -->
+
+    <!-- #region script-->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+    <!-- #endregion -->
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "./rent-swiper.css";
+@font-face {
+  font-family: "Estedad-black";
+  src: url(../font/Estedad-Black.ttf);
+}
+@font-face {
+  font-family: "Estedad-bold";
+  src: url(../font/Estedad-Bold.ttf);
+}
+@font-face {
+  font-family: "Estedad-ExtraBold";
+  src: url(../font/Estedad-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Estedad-ExtraLight";
+  src: url(../font/Estedad-ExtraLight.ttf);
+}
+@font-face {
+  font-family: " Estedad-Light";
+  src: url(../font/Estedad-Light.ttf);
+}
+@font-face {
+  font-family: "Estedad-Medium";
+  src: url(../font/Estedad-Medium.ttf);
+}
+@font-face {
+  font-family: "Estedad-Regular";
+  src: url(../font/Estedad-Regular.ttf);
+}
+@font-face {
+  font-family: "Estedad-SemiBold";
+  src: url(../font/Estedad-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Estedad-Thin";
+  src: url(../font/Estedad-Thin.ttf);
+}
+@theme {
+  --font-Esblack: "Estedad-black";
+  --font-Esbold: "Estedad-bold";
+  --font-EsExtraBold: "Estedad-ExtraBold";
+  --font-EsExtraLight: "Estedad-ExtraLight";
+  --font-Eslight: "Estedad-Light";
+  --font-EsMedium: "Estedad-Medium";
+  --font-EsRegular: "Estedad-Regular";
+  --font-EsSemiBold: "Estedad-SemiBold";
+  --font-EsThin: "Estedad-Thin";
+  --spacing-image: calc(50% - 1224px / 2);
+  --spacing-rental-list: calc(50% - 1224px / 2);
+  --spacing-image-2: calc(50% - 1225px / 2);
+  --spacing-image-3: calc(50% - 1221px / 2);
+  --spacing-head-center: calc(50% - 845px / 2);
+  --spacing-bottom-box: calc(100% - 186px / 2);
+  --spacing-button-center: calc(50% - 400px / 2);
+  --spacing-blog-head: calc(50% - 300px / 2);
+  --spacing-reserv-head: calc(50% - 200px / 2);
+  --spacing-blog-auto: calc(50% - 100px / 2);
+  --spacing-reserv-auto: calc(50% - 300px / 2);
+  --spacing-reserv-center: calc(50% - 1200px / 2);
+  --spacing-steps-center: calc(50% - 392px / 2);
+}
+
+@layer {
+  body {
+    @apply bg-[#f3f3f3];
+  }
+}
+.bg-custom {
+  background: url(../../public/image/bacgrond-slogan/bg-slogan-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: url(../../public/image/bacgrond-slogan/img-crop.png) no-repeat
+      center center,
+    url(../../public/image/bacgrond-slogan/img-bac.png) no-repeat center -30px; */
+}
+.button-border {
+  border: 1px solid #ffffff;
+}
+.info-border {
+  border: 1px solid #d7d7d7;
+}
+.info-2-border {
+  border: 1px solid #e2e2e2;
+}
+.bg-why {
+  background: url(../../public/image/why/img1.png) no-repeat center;
+  background-size: cover;
+  border-radius: 16px;
+}
+.button-2-border {
+  border: 2px solid #194bf0;
+}
+.border-bottom {
+  border-bottom: 2px solid #d7d7d7;
+}
+
+.footer-border {
+  border: 1px solid #868686;
+}
+
+.footer-bottom {
+  border-bottom: 1px solid #868686;
+}
+.bg-blog {
+  background-image: url(../../public/image/blog/background-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bottom-blog {
+  border-bottom: 2px solid #e2e2e2;
+}
+.border-blog {
+  border: 2px solid #e2e2e2;
+}
+.border-Rental {
+  border: 1px solid #9a9a9a;
+}
+.border-bottom-rental {
+  border-bottom: 2px solid #d7d7d7;
+}
