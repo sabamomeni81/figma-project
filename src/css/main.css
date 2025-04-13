@@ -17,7 +17,7 @@
   src: url(../font/Estedad-ExtraLight.ttf);
 }
 @font-face {
-  font-family: " Estedad-Light";
+  font-family: "Estedad-Light";
   src: url(../font/Estedad-Light.ttf);
 }
 @font-face {
@@ -53,12 +53,13 @@
   --spacing-head-center: calc(50% - 845px / 2);
   --spacing-bottom-box: calc(100% - 186px / 2);
   --spacing-button-center: calc(50% - 400px / 2);
-  --spacing-blog-head: calc(50% - 300px / 2);
+  --spacing-blog-head: calc(50% - 90px / 2);
   --spacing-reserv-head: calc(50% - 200px / 2);
   --spacing-blog-auto: calc(50% - 100px / 2);
   --spacing-reserv-auto: calc(50% - 300px / 2);
   --spacing-reserv-center: calc(50% - 1200px / 2);
   --spacing-steps-center: calc(50% - 392px / 2);
+  --spacing-blog-2-center: calc(50% - 300px / 2);
 }
 
 @layer {
@@ -120,4 +121,22 @@
 }
 .border-bottom-rental {
   border-bottom: 2px solid #d7d7d7;
+}
+.border-reserv {
+  border: 2px solid #e2e2e2;
+}
+.border-circle {
+  border: 0.5px solid #9a9a9a;
+}
+.border-btm-rental {
+  border-bottom: 2px solid #cbcbcb;
+}
+.border-btm {
+  border-bottom: 2px solid #D7D7D7;
+}
+.border-rental{
+  border-bottom: 1px solid #e2e2e2;
+}
+.border-reserv-comment {
+  border: 1px solid #e2e2e2;
 }

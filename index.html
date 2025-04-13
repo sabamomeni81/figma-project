@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- #region slogan -->
-    <div class="w-[100%] h-[683px] bg-custom relative">
+    <div class="hidden lg:block w-[100%] h-[683px] bg-custom relative">
       <!-- #region header-->
       <div
         class="flex justify-between items-center w-[1224px] h-[96px] rounded-b-2xl bg-white mx-auto px-8"
@@ -161,38 +161,105 @@
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
+    <!-- #region slogan-mobile-->
+    <div class="lg:hidden w-[100%] h-52 bg-custom relative">
+      <!-- #region header-mobile-->
+      <div
+        class="flex justify-between items-center w-full h-[45px] rounded-b-xl bg-white px-2"
+      >
+        <img class="w-14 h-6" src="./public/image/header/Logo.png" alt="" />
+        <div class="flex gap-3 items-center">
+          <a class="block" href="reservation.html"
+            ><p class="text-[#353535] text-[9px] font-EsRegular">
+              رزرو خودرو
+            </p></a
+          >
+          <a class="block" href="Rental-list.html"
+            ><p class="text-[#353535] text-[9px] font-EsRegular">خدمات ما</p></a
+          >
+          <a class="block" href="blog.html"
+            ><p class="text-[#353535] text-[9px] font-EsRegular">بلاگ</p></a
+          >
+          <a class="block" href="#"
+            ><p class="text-[#353535] text-[9px] font-EsRegular">
+              درباره ما
+            </p></a
+          >
+          <a class="block" href="#"
+            ><p class="text-[#353535] text-[9px] font-EsRegular">
+              تماس با ما
+            </p></a
+          >
+          <img class="w-4 h-4" src="./public/svg/search.svg" alt="" />
+        </div>
+        <div
+          class="flex justify-center items-center px-1 rounded-[5px] w-[75px] h-[20px] bg-[#194BF0] text-white text-[10px] font-EsRegular"
+        >
+          ورود / ثبت‌نام
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region AutoRent-Data-mobile -->
+      <div class="w-[335px] h-[124px] absolute top-[75px] right-[12px]">
+        <h1 class="font-EsMedium text-[16px] text-[#FDB713]">
+          اُتـــو رِنت؛ سریع، <br />آسان و به صرفه
+        </h1>
+      </div>
+      <div class="w-[460px] h-[36px] absolute top-[120px] right-[12px]">
+        <p class="text-[#f9f9f9] text-[10px] leading-9 font-EsRegular">
+          سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
+        </p>
+      </div>
+      <div class="flex gap-10">
+        <button
+          class="flex justify-center items-center gap-2 w-28 h-[30px] bg-[#FDB713] absolute top-[150px] right-[12px] rounded-[7px]"
+        >
+          <img class="w-5 h-5" src="./public/svg/car.svg" alt="" />
+          <p class="text-[10px] font-EsRegular font-bold">رزرو آسان خودرو</p>
+        </button>
+        <button
+          class="flex justify-center items-center gap-2 w-24 h-[30px] bg-transparent button-border absolute top-[150px] right-[130px] rounded-[7px]"
+        >
+          <img class="w-5 h-5" src="./public/svg/arrow-left.svg" alt="" />
+          <p class="font-EsMedium text-[10px] text-[#ffffff]">تماس با ما</p>
+        </button>
+      </div>
+      <!-- #endregion -->
+    </div>
+
+    <!-- #endregion -->
     <!-- #region brands-->
     <div
-      class="absolute justify-between top-[830px] flex items-center px-2 w-full h-20 opacity-35 gap-14"
+      class="absolute justify-around lg:justify-between lg:top-[830px] top-[210px] flex items-center px-2 w-full h-20 opacity-35 gap-2"
     >
-      <div class="w-fit">
+      <div class="lg:w-fit w-16">
         <img src="./public/image/brands/KIA.png" alt="" />
       </div>
-      <div class="w-fit">
+      <div class="lg:w-fit w-16">
         <img src="./public/image/brands/KIA (1).png" alt="" />
       </div>
-      <div class="w-fit">
+      <div class="lg:w-fit w-16">
         <img src="./public/image/brands/KIA (3).png" alt="" />
       </div>
-      <div class="w-fit">
-        <img src="./public/image/brands/Toyota.png" alt="" />
-      </div>
-      <div class="w-fit">
-        <img src="./public/image/brands/Nissan.png" alt="" />
-      </div>
-      <div class="w-fit">
+      <div class="lg:w-fit w-16">
         <img src="./public/image/brands/Hyundai.png" alt="" />
       </div>
-      <div class="w-fit">
+      <div class="w-fit hidden lg:block">
+        <img src="./public/image/brands/Nissan.png" alt="" />
+      </div>
+      <div class="w-fit hidden lg:block">
+        <img src="./public/image/brands/Toyota.png" alt="" />
+      </div>
+      <div class="w-fit hidden lg:block">
         <img src="./public/image/brands/Honda.png" alt="" />
       </div>
-      <div class="w-fit">
+      <div class="w-fit hidden lg:block">
         <img src="./public/image/brands/Marcedes.png" alt="" />
       </div>
-      <div class="w-fit">
+      <div class="w-fit hidden lg:block">
         <img src="./public/image/brands/lexus-logo.png" alt="" />
       </div>
-      <div class="w-fit">
+      <div class="w-fit hidden lg:block">
         <img src="./public/image/brands/BMW.png" alt="" />
       </div>
     </div>
@@ -310,26 +377,34 @@
     <div
       class="flex absolute top-[1716px] left-button-center items-center gap-2 w-[400px] h-[48px]"
     >
-      <div
-        class="flex items-center justify-center w-[128px] h-[48px] rounded-lg bg-[#194BF0] text-[14px] text-white font-EsRegular"
+      <a href="#" class="block"
+        ><div
+          class="flex items-center justify-center w-[128px] h-[48px] rounded-lg bg-[#194BF0] text-[14px] text-white font-EsRegular"
+        >
+          پرطرفدار
+        </div></a
       >
-        پرطرفدار
-      </div>
-      <div
-        class="flex items-center justify-center w-[128px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
+      <a href="#" class="block"
+        ><div
+          class="flex items-center justify-center w-[128px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
+        >
+          لوکس
+        </div></a
       >
-        لوکس
-      </div>
-      <div
-        class="flex items-center justify-center w-[128px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
+      <a href="#" class="block"
+        ><div
+          class="flex items-center justify-center w-[128px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
+        >
+          اقتصادی
+        </div></a
       >
-        اقتصادی
-      </div>
     </div>
     <div
       class="flex w-[184px] h-[48px] items-center justify-center gap-2 rounded-[8px] absolute top-[1716px] left-[115px]"
     >
-      <p class="text-[#194BF0] text-lg font-EsMedium">مشاهده همه</p>
+      <a href="#" class="block">
+        <p class="text-[#194BF0] text-lg font-EsMedium">مشاهده همه</p>
+      </a>
       <img src="./public/svg/arrow-left-mojod.svg" alt="" />
     </div>
     <!-- #region reservation-->
@@ -387,11 +462,13 @@
           <p class="text-[11px] text-[#212121] font-EsMedium">مبلغ ضمانت:</p>
           <p class="text-[11px] text-[#212121] font-Esbold">۸۰ میلیون تومان</p>
         </div>
-        <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+        <a href="#" class="block"
+          ><div
+            class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          >
+            <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
+          </div></a
         >
-          <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
-        </div>
       </div>
       <div
         class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
@@ -444,11 +521,13 @@
           <p class="text-[11px] text-[#212121] font-EsMedium">مبلغ ضمانت:</p>
           <p class="text-[11px] text-[#212121] font-Esbold">۸۰ میلیون تومان</p>
         </div>
-        <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+        <a href="#" class="block"
+          ><div
+            class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          >
+            <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
+          </div></a
         >
-          <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
-        </div>
       </div>
       <div
         class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
@@ -501,11 +580,13 @@
           <p class="text-[11px] text-[#212121] font-EsMedium">مبلغ ضمانت:</p>
           <p class="text-[11px] text-[#212121] font-Esbold">۸۰ میلیون تومان</p>
         </div>
-        <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+        <a href="#" class="block"
+          ><div
+            class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          >
+            <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
+          </div></a
         >
-          <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
-        </div>
       </div>
       <div
         class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
@@ -558,11 +639,13 @@
           <p class="text-[11px] text-[#212121] font-EsMedium">مبلغ ضمانت:</p>
           <p class="text-[11px] text-[#212121] font-Esbold">۸۰ میلیون تومان</p>
         </div>
-        <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+        <a href="#" class="block"
+          ><div
+            class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          >
+            <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
+          </div></a
         >
-          <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
-        </div>
       </div>
       <div
         class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
@@ -615,11 +698,13 @@
           <p class="text-[11px] text-[#212121] font-EsMedium">مبلغ ضمانت:</p>
           <p class="text-[11px] text-[#212121] font-Esbold">۸۰ میلیون تومان</p>
         </div>
-        <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+        <a href="#" class="block"
+          ><div
+            class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          >
+            <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
+          </div></a
         >
-          <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
-        </div>
       </div>
       <div
         class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
@@ -672,11 +757,13 @@
           <p class="text-[11px] text-[#212121] font-EsMedium">مبلغ ضمانت:</p>
           <p class="text-[11px] text-[#212121] font-Esbold">۸۰ میلیون تومان</p>
         </div>
-        <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+        <a href="#" class="block"
+          ><div
+            class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          >
+            <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
+          </div></a
         >
-          <p class="font-EsRegular text-white text-[14px]">درخواست رزرو</p>
-        </div>
       </div>
     </div>
     <!-- #endregion -->
@@ -968,7 +1055,9 @@
     <div
       class="flex w-[184px] h-[48px] items-center justify-center gap-2 rounded-[8px] absolute top-[5373px] left-[115px]"
     >
-      <p class="text-[#194BF0] text-lg font-EsMedium">مشاهده همه</p>
+      <a href="#" class="block">
+        <p class="text-[#194BF0] text-lg font-EsMedium">مشاهده همه</p>
+      </a>
       <img src="./public/svg/arrow-left-mojod.svg" alt="" />
     </div>
 

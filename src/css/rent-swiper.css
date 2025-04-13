@@ -60,7 +60,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   background-color: whitesmoke;
-  border-radius: 8px;
+  border-radius: 50%;
   border: 1px solid lightgray;
   width: 40px;
   height: 40px;
