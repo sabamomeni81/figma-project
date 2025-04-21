@@ -65,6 +65,7 @@
   --spacing-reserv-center: calc(50% - 1200px / 2);
   --spacing-steps-center: calc(50% - 392px / 2);
   --spacing-blog-2-center: calc(50% - 300px / 2);
+  --spacing-index-center: calc(50% - 500px / 2);
 }
 
 @layer {
