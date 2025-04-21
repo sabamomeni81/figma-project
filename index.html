@@ -164,61 +164,76 @@
     <!-- #region slogan-mobile-->
     <div class="lg:hidden w-[100%] h-52 bg-custom relative">
       <!-- #region header-mobile-->
-      <div
-        class="flex justify-between items-center w-full h-[45px] rounded-b-xl bg-white px-6"
-      >
-        <a href="index.html" class="block"
-          ><img class="w-16 h-6" src="./public/image/header/Logo.png" alt=""
-        /></a>
-        <textarea
-          class="text-[10px] leading-5 text-[#a3a3a3] font-EsMedium resize-none px-3 w-[50%] h-[25px] rounded-2xl border-search outline-0 bg-[#f3f3f3]"
-          name="search"
-          id="search"
-          placeholder="جستجو..."
-        ></textarea>
-        <img src="./public/svg/person.svg" alt="" />
-        <div class="flex items-center relative group">
-          <!-- Main Menu Item -->
-          <button class="rounded-md">
-            <img src="./public/svg/bars.svg" alt="" />
-          </button>
+      <header class=" bg-white rounded-b-xl shadow-md px-4 py-2">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="block"
+            ><img class="w-20 h-8" src="./public/image/header/Logo.png" alt=""
+          /></a>
 
-          <!-- Submenu -->
-          <div
-            class="w-[310px] absolute hidden -left-5 top-7 group-hover:block bg-[#f3f3f3] shadow-lg rounded-md mt-2"
+          <textarea
+            class="text-[10px] leading-5 text-[#a3a3a3] font-EsMedium resize-none px-3 w-[50%] h-[25px] rounded-2xl border-search outline-0 bg-[#f3f3f3]"
+            name="search"
+            id="search"
+            placeholder="جستجو..."
+          ></textarea>
+          <img src="./public/svg/person.svg" alt="" />
+          <div class="block lg:hidden">
+            <button
+              id="menu-toggle"
+              class="flex items-center text-gray-800 outline-none"
+            >
+              <img src="./public/svg/bars.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="flex items-center justify-center">
+        <div
+          id="mobile-menu"
+          class="hidden p-4 mr-20 bg-white w-[70%] shadow-lg"
+        >
+          <a
+            href="reservation.html"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >رزرو خودرو</a
           >
-            <div class="flex justify-between p-3 gap-5 items-center">
-              <a class="block" href="reservation.html"
-                ><p
-                  class="line-clamp-1 text-[#353535] text-[11px] font-EsMedium"
-                >
-                  رزرو خودرو
-                </p></a
-              >
-              <a class="block" href="Rental-list.html"
-                ><p class="text-[#353535] text-[11px] font-EsMedium">
-                  خدمات ما
-                </p></a
-              >
-              <a class="block" href="blog.html"
-                ><p class="text-[#353535] text-[11px] font-EsMedium">بلاگ</p></a
-              >
-              <a class="block" href="#"
-                ><p class="text-[#353535] text-[11px] font-EsMedium">
-                  درباره ما
-                </p></a
-              >
-              <a class="block" href="#"
-                ><p class="text-[#353535] text-[11px] font-EsMedium">
-                  تماس با ما
-                </p></a
-              >
-            </div>
+          <a
+            href="#contact"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >تماس با ما</a
+          >
+          <a
+            href="#about"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >درباره ما</a
+          >
+          <a
+            href="Rental-list.html"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >خدمات ما</a
+          >
+          <a
+            href="blog.html"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >بلاگ</a
+          >
+          <div
+            class="flex justify-center items-center py-1 px-4 rounded-lg w-full h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
+          >
+            ورود / ثبت‌نام
           </div>
         </div>
       </div>
-      <!-- #endregion -->
 
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+      <!-- #endregion -->
       <!-- #region AutoRent-Data-mobile -->
       <div class="w-[335px] h-[124px] absolute top-[75px] right-[12px]">
         <h1 class="font-EsMedium text-[16px] text-[#FDB713]">
@@ -433,7 +448,6 @@
       </p>
     </div>
     <!-- #endregion -->
-
     <!-- #region mojod-->
     <div
       class="hidden lg:flex flex-col items-center gap-5 w-[845px] h-[109px] absolute top-[1591px] left-head-center bg-transparent"

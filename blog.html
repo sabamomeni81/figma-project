@@ -61,7 +61,7 @@
     <!-- #region blog-mobile-->
     <div class="lg:hidden w-[100%] h-52 bg-blog-mobile relative">
       <!-- #region header-mobile-->
-      <header class="bg-white rounded-b-xl shadow-md px-4 py-2">
+      <header class="bg-white  rounded-b-xl shadow-md px-4 py-2">
         <div class="flex justify-between items-center">
           <a href="index.html" class="block"
             ><img class="w-20 h-8" src="./public/image/header/Logo.png" alt=""
@@ -131,18 +131,26 @@
         });
       </script>
       <!-- #endregion -->
+      <!-- #region Articles-->
+      <h3
+        class="w-[90px] absolute top-[80px] left-blog-head text-[34px] text-[#FDB713] font-Esbold"
+      >
+        مقالات
+      </h3>
+      <div
+        class="flex items-center gap-[6px] justify-between pl-2 w-[100px] absolute top-[130px] left-blog-auto"
+      >
+        <span class="font-EsExtraLight text-white text-[14px]">مقالات</span>
+        <img src="./public/svg/arrow-left-blog.svg" alt="" />
+        <span class="font-EsExtraLight text-white text-[14px]"> اتورنت </span>
+      </div>
+      <!-- #endregion -->
     </div>
     <!-- #endregion -->
-    <textarea
-      class="flex lg:hidden items-center justify-between absolute top-[230px] mr-[10%] font-EsMedium resize-none w-[300px] h-[45px] rounded-[14px] bg-white py-[14px] px-4"
-      name="search"
-      id="search"
-      placeholder="جستجو..."
-    ></textarea>
     <!-- #region blog-wrapper-->
 
     <div
-      class="flex gap-[25px] w-[1224px] absolute top-[300px] lg:top-[500px] left-image"
+      class="flex gap-[25px] w-[1224px] absolute top-[230px] lg:top-[500px] left-image"
     >
       <!-- #region method-desktop-->
       <div class="hidden lg:flex lg:flex-col gap-[16px]">
@@ -916,7 +924,7 @@
     </div>
 
     <!-- #endregion -->
-
+    
     <!-- #region footer-mobile-->
     <div
       class="flex lg:hidden flex-col items-center absolute top-[1850px] gap-4 mt-10 w-full h-fit bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
@@ -1043,5 +1051,6 @@
     </div>
 
     <!-- #endregion -->
+ 
   </body>
 </html>
