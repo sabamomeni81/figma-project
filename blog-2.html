@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- #region blog -->
-    <div class="w-[100%] h-[450px] bg-blog relative">
+    <div class="hidden lg:block w-[100%] h-[450px] bg-blog relative">
       <!-- #region header-->
       <div
         class="flex justify-between items-center w-[1224px] h-[96px] rounded-b-2xl bg-white mx-auto px-8"
@@ -58,6 +58,81 @@
     </div>
     <!-- #endregion -->
 
+    <!-- #region blog-mobile-->
+    <div class="lg:hidden w-[100%] h-52 bg-blog-mobile relative">
+      <!-- #region header-mobile-->
+      <header class="bg-white rounded-b-xl shadow-md px-4 py-2">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="block"
+            ><img class="w-20 h-8" src="./public/image/header/Logo.png" alt=""
+          /></a>
+
+          <textarea
+            class="text-[10px] leading-5 text-[#a3a3a3] font-EsMedium resize-none px-3 w-[50%] h-[25px] rounded-2xl border-search outline-0 bg-[#f3f3f3]"
+            name="search"
+            id="search"
+            placeholder="جستجو..."
+          ></textarea>
+          <img src="./public/svg/person.svg" alt="" />
+          <div class="block lg:hidden">
+            <button
+              id="menu-toggle"
+              class="flex items-center text-gray-800 outline-none"
+            >
+              <img src="./public/svg/bars.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="flex items-center justify-center">
+        <div
+          id="mobile-menu"
+          class="hidden p-4 mr-20 bg-white w-[70%] shadow-lg"
+        >
+          <a
+            href="reservation.html"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >رزرو خودرو</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >تماس با ما</a
+          >
+          <a
+            href="#about"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >درباره ما</a
+          >
+          <a
+            href="Rental-list.html"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >خدمات ما</a
+          >
+          <a
+            href="blog.html"
+            class="block py-2 text-center font-EsMedium text-[#504f4f]"
+            >بلاگ</a
+          >
+          <div
+            class="flex justify-center items-center py-1 px-4 rounded-lg w-full h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
+          >
+            ورود / ثبت‌نام
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
     <!-- #region blog-wrapper-->
     <div
       class="flex flex-col mt-[55px] mr-[150px] gap-[30px] w-[775px] h-[56px]"
@@ -83,7 +158,7 @@
       </div>
     </div>
     <div
-      class="flex gap-[25px] w-[1224px] h-[1200px] absolute top-[635px] left-image"
+      class="flex gap-[25px] w-[1224px] h-[2000px] mx-auto absolute top-[635px] left-image"
     >
       <div class="flex flex-col gap-[14px] w-[804px] h-[386px]">
         <img
@@ -145,6 +220,60 @@
             </p>
           </div>
         </div>
+        <!-- #region Comments -->
+
+        <div class="flex flex-col gap-4 w-[805px] h-[619px] mt-7">
+          <p class="h-[42px] text-[#868686] text-[13px] font-EsRegular">
+            نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری
+            شده‌اند *
+          </p>
+          <form>
+            <label
+              for="message"
+              class="text-[#353535] text-[18px] font-EsMedium"
+            >
+              دیدگاه شما*
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="w-[804px] h-[208px] my-4 text-[#9A9A9A] text-[14px] font-EsRegular px-4 py-2 border-blog rounded-[8px] bg-white"
+              placeholder="پیام"
+            ></textarea>
+            <label for="name" class="text-[#353535] text-[18px] font-EsMedium">
+              نام *
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="flex items-center w-[804px] h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
+              placeholder="نام"
+              required
+            />
+            <label for="email" class="text-[#353535] text-[18px] font-EsMedium">
+              ایمیل *
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="flex items-center w-[804px] h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
+              placeholder="ایمیل"
+              required
+            />
+            <div class="text-left">
+              <button
+                type="submit"
+                class="flex items-center justify-center w-[150px] h-[40px] rounded-[8px] bg-[#194BF0] py-1 text-[#ffffff] text-[13px] font-EsRegular hover:bg-blue-900 transition-all"
+              >
+                ثبت دیدگاه
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- #endregion -->
       </div>
 
       <!-- #region blog-search-->
@@ -340,62 +469,10 @@
     </div>
 
     <!-- #endregion -->
-    <!-- #region Comments -->
-
-    <div
-      class="flex flex-col gap-4 w-[805px] h-[619px] absolute top-[1880px] left-[565px]"
-    >
-      <p class="h-[42px] text-[#868686] text-[13px] font-EsRegular">
-        نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
-      </p>
-      <form>
-        <label for="message" class="text-[#353535] text-[18px] font-EsMedium">
-          دیدگاه شما*
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          class="w-[804px] h-[208px] my-4 text-[#9A9A9A] text-[14px] font-EsRegular px-4 py-2 border-blog rounded-[8px] bg-white"
-          placeholder="پیام"
-        ></textarea>
-        <label for="name" class="text-[#353535] text-[18px] font-EsMedium">
-          نام *
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="flex items-center w-[804px] h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
-          placeholder="نام"
-          required
-        />
-        <label for="email" class="text-[#353535] text-[18px] font-EsMedium">
-          ایمیل *
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="flex items-center w-[804px] h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
-          placeholder="ایمیل"
-          required
-        />
-        <div class="text-left">
-          <button
-            type="submit"
-            class="flex items-center justify-center w-[150px] h-[40px] rounded-[8px] bg-[#194BF0] py-1 text-[#ffffff] text-[13px] font-EsRegular hover:bg-blue-900 transition-all"
-          >
-            ثبت دیدگاه
-          </button>
-        </div>
-      </form>
-    </div>
-    <!-- #endregion -->
 
     <!-- #region footer-->
     <div
-      class="flex flex-col mt-10 items-center absolute gap-4 top-[2500px] left-image rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+      class="hidden lg:flex flex-col mt-10 items-center absolute gap-4 top-[2500px] left-image rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
     >
       <div
         class="flex items-center gap-[81px] w-[1120px] h-[101px] footer-border rounded-2xl p-4"
@@ -509,6 +586,132 @@
       <div class="flex items-center gap-2 mt-6 w-[315px] h-[25px]">
         <img src="./public/svg/cc-footer.svg" alt="" />
         <p class="text-[#9A9A9A] text-[13px] font-EsRegular">
+          تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+        </p>
+      </div>
+      <!-- #endregion -->
+    </div>
+
+    <!-- #endregion -->
+    <!-- #region footer-mobile-->
+    <div
+      class="flex lg:hidden flex-col items-center absolute top-[2500px] gap-4 mt-10 w-full h-fit bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+    >
+      <div
+        class="flex my-2 flex-col items-center w-full footer-border rounded-2xl"
+      >
+        <div
+          class="flex gap-4 items-center py-4 pr-9 w-[254.66665649414062px] h-[69px]"
+        >
+          <img src="./public/image/footer/call.png" alt="" />
+          <div
+            class="flex flex-col gap-3 text-center pt-2 justify-center items-center"
+          >
+            <p class="w-[113px] h-[28px] text-[#FFFBFB] text-md font-EsRegular">
+              ارتباط با ما
+            </p>
+            <p class="w-[111px] h-[28px] text-[#FDB713] text-md font-EsRegular">
+              ۰۹۱۲-۲۱۳۲۶۵۴۵
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center w-[80%] h-[1px] bg-body-gray my-1"
+        ></div>
+        <div
+          class="flex gap-4 items-center py-4 pr-9 w-[254.66665649414062px] h-[69px]"
+        >
+          <img src="./public/image/footer/email.png" alt="" />
+          <div
+            class="flex flex-col gap-3 text-center pt-2 justify-center items-center"
+          >
+            <p class="w-[113px] h-[28px] text-[#FFFBFB] text-md font-EsRegular">
+              ایمیل
+            </p>
+            <p class="w-[111px] h-[28px] text-[#FDB713] text-md font-EsRegular">
+              autorent@info.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center bg-[#868686] w-[80%] h-[1px] my-1"
+        ></div>
+        <div
+          class="flex items-center mt-3 ml-8 w-[254.66665649414062px] h-[69px]"
+        >
+          <img
+            class="mr-[50px]"
+            src="./public/image/footer/address.png"
+            alt=""
+          />
+          <div
+            class="flex flex-col justify-center items-center w-full h-[100px] gap-2"
+          >
+            <p
+              class="w-[113px] h-[28px] text-center text-[#FFFBFB] text-md font-EsRegular"
+            >
+              آدرس
+            </p>
+            <p
+              class="w-fit h-[28px] text-center text-[#FDB713] text-md font-EsRegular"
+            >
+              تهران- خ شادمان
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- #region autorent-->
+
+      <div class="flex items-center footer-bottom gap-4 w-full">
+        <div class="flex flex-col items-center w-full">
+          <div class="flex flex-col gap-6 justify-center items-center">
+            <img
+              class="w-[151.28px] h-[59px]"
+              src="./public/image/footer/Logo.png"
+              alt=""
+            />
+            <p
+              class="w-full px-6 h-fit text-justify text-white leading-6 text-sm font-Eslight"
+            >
+              اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+              ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+              تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center w-[80%] h-[1px] bg-body-gray my-1"
+          ></div>
+          <div class="flex flex-col gap-6 items-center justify-center mt-3">
+            <p class="text-[12px] text-white font-EsRegular">دسترسی آسان</p>
+            <p class="text-[12px] text-white font-EsRegular">سوالات متداول</p>
+            <p class="text-[12px] text-white font-EsRegular">تماس با ما</p>
+            <p class="text-[12px] text-white font-EsRegular">درباره ما</p>
+          </div>
+          <div class="flex flex-col my-[44px] gap-3 w-[320px] h-[80px]">
+            <p class="text-[#FDB713] text-xl text-center font-Esbold">
+              خبرنامه
+            </p>
+            <div
+              class="flex items-center w-[320px] footer-border p-2 rounded-lg h-[40px]"
+            >
+              <p
+                class="flex items-center w-[234px] h-[32px] text-white text-[12px] font-Eslight"
+              >
+                ایمیل خود را وارد کنید
+              </p>
+              <div
+                class="flex items-center justify-center py-4 px-3 bg-mustard rounded-[6px] w-[66px] h-[32px] text-[#212121] text-[13px] font-EsSemiBold bg-[#FDB713]"
+              >
+                ارسال
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 my-4 w-fit h-[25px]">
+        <img src="./public/images/svg/creative-commons.svg" alt="" />
+        <p class="text-[#9A9A9A] text-sm font-EsRegular">
           تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
         </p>
       </div>

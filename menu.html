@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هدر موبایل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md p-4">
+        <!-- هدر موبایل -->
+        <div class="flex justify-between items-center">
+            <!-- لوگو -->
+            <div class="text-lg font-bold text-gray-800">
+<img src="./public/image/" alt="">            </div>
+
+            <!-- باکس جستجو -->
+            <div class="hidden md:block flex-grow mx-4">
+                <input type="text" class="w-full p-2 border border-gray-300 rounded-md" placeholder="جستجو...">
+            </div>
+
+            <!-- منوی همبرگری -->
+            <div class="block md:hidden">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- منوی کشویی -->
+        <div id="menu" class="hidden md:block mt-4">
+            <div class="flex flex-col items-center space-y-4">
+                <a href="#reserve" class="text-gray-800">رزرو خودرو</a>
+                <a href="#contact" class="text-gray-800">تماس با ما</a>
+                <a href="#about" class="text-gray-800">درباره ما</a>
+                <a href="#services" class="text-gray-800">خدمات ما</a>
+                <a href="#blog" class="text-gray-800">بلاگ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- منوی کشویی موبایل -->
+    <div id="mobile-menu" class="hidden p-4 mt-4 bg-white shadow-lg">
+        <a href="#reserve" class="block py-2 text-gray-800">رزرو خودرو</a>
+        <a href="#contact" class="block py-2 text-gray-800">تماس با ما</a>
+        <a href="#about" class="block py-2 text-gray-800">درباره ما</a>
+        <a href="#services" class="block py-2 text-gray-800">خدمات ما</a>
+        <a href="#blog" class="block py-2 text-gray-800">بلاگ</a>
+    </div>
+
+    <script>
+        // منوی همبرگری
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- موبایل باهم -->
+ <!-- #region header-mobile-->
+ <div
+ class="flex justify-between items-center w-full h-[45px] rounded-b-xl bg-white px-6"
+>
+ <a href="index.html" class="block"
+   ><img class="w-16 h-6" src="./public/image/header/Logo.png" alt=""
+ /></a>
+ <textarea
+   class="text-[10px] leading-5 text-[#a3a3a3] font-EsMedium resize-none px-3 w-[50%] h-[25px] rounded-2xl border-search outline-0 bg-[#f3f3f3]"
+   name="search"
+   id="search"
+   placeholder="جستجو..."
+ ></textarea>
+ <img src="./public/svg/person.svg" alt="" />
+ <div class="flex items-center relative group">
+   <!-- Main Menu Item -->
+   <button class="rounded-md">
+     <img src="./public/svg/bars.svg" alt="" />
+   </button>
+
+   <!-- Submenu -->
+   <div
+     class="w-[310px] absolute hidden -left-5 top-7 group-hover:block bg-[#f3f3f3] shadow-lg rounded-md mt-2"
+   >
+     <div class="flex justify-between p-3 gap-5 items-center">
+       <a class="block" href="reservation.html"
+         ><p
+           class="line-clamp-1 text-[#353535] text-[11px] font-EsMedium"
+         >
+           رزرو خودرو
+         </p></a
+       >
+       <a class="block" href="Rental-list.html"
+         ><p class="text-[#353535] text-[11px] font-EsMedium">
+           خدمات ما
+         </p></a
+       >
+       <a class="block" href="blog.html"
+         ><p class="text-[#353535] text-[11px] font-EsMedium">بلاگ</p></a
+       >
+       <a class="block" href="#"
+         ><p class="text-[#353535] text-[11px] font-EsMedium">
+           درباره ما
+         </p></a
+       >
+       <a class="block" href="#"
+         ><p class="text-[#353535] text-[11px] font-EsMedium">
+           تماس با ما
+         </p></a
+       >
+     </div>
+   </div>
+ </div>
+</div>
+<!-- #endregion -->

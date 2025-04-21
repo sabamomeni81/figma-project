@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @import "./rent-swiper.css";
+@layer {
+  body {
+    @apply overflow-x-hidden;
+  }
+}
 @font-face {
   font-family: "Estedad-black";
   src: url(../font/Estedad-Black.ttf);
@@ -132,11 +137,20 @@
   border-bottom: 2px solid #cbcbcb;
 }
 .border-btm {
-  border-bottom: 2px solid #D7D7D7;
+  border-bottom: 2px solid #d7d7d7;
 }
-.border-rental{
+.border-rental {
   border-bottom: 1px solid #e2e2e2;
 }
 .border-reserv-comment {
   border: 1px solid #e2e2e2;
+}
+.bg-blog-mobile {
+  background-image: url(../../public/image/blog/back-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.border-search {
+  border: 1px solid #d7d7d7;
 }

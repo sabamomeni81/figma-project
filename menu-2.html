@@ -1,0 +1,126 @@
+<header class="bg-white shadow-md px-4 py-2">
+  <!-- هدر موبایل -->
+  <div class="flex justify-between items-center">
+    <!-- لوگو -->
+    <a href="index.html" class="block"
+      ><img class="w-20 h-8" src="./public/image/header/Logo.png" alt=""
+    /></a>
+
+    <!-- باکس جستجو -->
+    <div class="flex-1 mx-4">
+      <input
+        type="text"
+        placeholder="جستجو..."
+        class="w-full px-4 py-2 text-sm border-search rounded-full shadow-sm"
+      />
+    </div>
+
+    <!-- منوی همبرگری -->
+    <div class="block md:hidden">
+      <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- منوی کشویی -->
+  <div id="menu" class="hidden md:block mt-4">
+    <div class="flex flex-col items-center space-y-4">
+      <a href="#reserve" class="text-gray-800">رزرو خودرو</a>
+      <a href="#contact" class="text-gray-800">تماس با ما</a>
+      <a href="#about" class="text-gray-800">درباره ما</a>
+      <a href="#services" class="text-gray-800">خدمات ما</a>
+      <a href="#blog" class="text-gray-800">بلاگ</a>
+    </div>
+  </div>
+</header>
+
+<!-- منوی کشویی موبایل -->
+<div id="mobile-menu" class="hidden p-4 bg-white shadow-lg">
+  <a href="#reserve" class="block py-2 font-EsMedium text-gray-800"
+    >رزرو خودرو</a
+  >
+  <a href="#contact" class="block py-2 text-gray-800">تماس با ما</a>
+  <a href="#about" class="block py-2 text-gray-800">درباره ما</a>
+  <a href="#services" class="block py-2 text-gray-800">خدمات ما</a>
+  <a href="#blog" class="block py-2 text-gray-800">بلاگ</a>
+</div>
+
+<script>
+  // منوی همبرگری
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex items-center relative group">
+  <!-- Main Menu Item -->
+  <button class="rounded-md">
+    <img src="./public/svg/bars.svg" alt="" />
+  </button>
+
+  <!-- Submenu -->
+  <div
+    class="w-[310px] absolute hidden -left-5 top-7 group-hover:block bg-[#f3f3f3] shadow-lg rounded-md mt-2"
+  >
+    <div class="flex justify-between p-3 gap-5 items-center">
+      <a class="block" href="reservation.html"
+        ><p class="line-clamp-1 text-[#353535] text-[11px] font-EsMedium">
+          رزرو خودرو
+        </p></a
+      >
+      <a class="block" href="Rental-list.html"
+        ><p class="text-[#353535] text-[11px] font-EsMedium">خدمات ما</p></a
+      >
+      <a class="block" href="blog.html"
+        ><p class="text-[#353535] text-[11px] font-EsMedium">بلاگ</p></a
+      >
+      <a class="block" href="#"
+        ><p class="text-[#353535] text-[11px] font-EsMedium">درباره ما</p></a
+      >
+      <a class="block" href="#"
+        ><p class="text-[#353535] text-[11px] font-EsMedium">تماس با ما</p></a
+      >
+    </div>
+  </div>
+</div>
