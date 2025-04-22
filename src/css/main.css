@@ -1,5 +1,11 @@
 @import "tailwindcss";
 @import "./rent-swiper.css";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 @font-face {
   font-family: "Estedad-black";
