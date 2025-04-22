@@ -1,12 +1,5 @@
 @import "tailwindcss";
 @import "./rent-swiper.css";
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
 @font-face {
   font-family: "Estedad-black";
   src: url(../font/Estedad-Black.ttf);
@@ -75,7 +68,7 @@
 @layer {
   body {
     @apply bg-[#f3f3f3];
-    /* @apply overflow-x-hidden; */
+    @apply overflow-x-hidden;
   }
 }
 .bg-custom {

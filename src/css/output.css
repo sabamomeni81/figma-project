@@ -2195,9 +2195,6 @@
   color: #757575;
   font-size: 20px;
 }
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 @font-face {
   font-family: "Estedad-black";
   src: url(../font/Estedad-Black.ttf);
@@ -2237,6 +2234,7 @@
 @layer {
   body {
     background-color: #f3f3f3;
+    overflow-x: hidden;
   }
 }
 .bg-custom {
