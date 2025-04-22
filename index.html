@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Rent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body>
@@ -164,7 +165,7 @@
     <!-- #region slogan-mobile-->
     <div class="lg:hidden w-[100%] h-52 bg-custom relative">
       <!-- #region header-mobile-->
-      <header class=" bg-white rounded-b-xl shadow-md px-4 py-2">
+      <header class="bg-white rounded-b-xl shadow-md px-4 py-2">
         <div class="flex justify-between items-center">
           <a href="index.html" class="block"
             ><img class="w-20 h-8" src="./public/image/header/Logo.png" alt=""
@@ -177,62 +178,49 @@
             placeholder="جستجو..."
           ></textarea>
           <img src="./public/svg/person.svg" alt="" />
-          <div class="block lg:hidden">
-            <button
-              id="menu-toggle"
-              class="flex items-center text-gray-800 outline-none"
-            >
+          <div class="relative">
+            <input id="menu-toggle" type="checkbox" class="peer hidden" />
+            <label for="menu-toggle" class="text-3xl cursor-pointer">
               <img src="./public/svg/bars.svg" alt="" />
-            </button>
+            </label>
+            <label
+              for="menu-toggle"
+              class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:block z-40"
+            ></label>
+            <aside
+              class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 z-50 p-6 flex flex-col space-y-6"
+            >
+              <nav class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >رزرو خودرو</a
+                >
+                <a
+                  href="#"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >تماس با ما</a
+                >
+                <a
+                  href="#"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >درباره ما</a
+                >
+                <a
+                  href="#"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >خدمات ما</a
+                >
+              </nav>
+              <div
+                class="flex justify-center items-center py-1 px-4 rounded-lg w-full h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
+              >
+                <a href="#" class="block"> ورود / ثبت‌نام </a>
+              </div>
+            </aside>
           </div>
         </div>
       </header>
-
-      <div class="flex items-center justify-center">
-        <div
-          id="mobile-menu"
-          class="hidden p-4 mr-20 bg-white w-[70%] shadow-lg"
-        >
-          <a
-            href="reservation.html"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >رزرو خودرو</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >تماس با ما</a
-          >
-          <a
-            href="#about"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >درباره ما</a
-          >
-          <a
-            href="Rental-list.html"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >خدمات ما</a
-          >
-          <a
-            href="blog.html"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >بلاگ</a
-          >
-          <div
-            class="flex justify-center items-center py-1 px-4 rounded-lg w-full h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
-          >
-            ورود / ثبت‌نام
-          </div>
-        </div>
-      </div>
-
-      <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
-        menuToggle.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      </script>
       <!-- #endregion -->
       <!-- #region AutoRent-Data-mobile -->
       <div class="w-[335px] h-[124px] absolute top-[75px] right-[12px]">
@@ -1230,7 +1218,7 @@
     <!-- #endregion -->
     <!-- #region Questions-->
     <div
-      class="flex flex-col items-center gap-5 w-[500px] top-[4200px] left-index-center lg:w-[845px] lg:h-[109px] absolute lg:top-[4022px] lg:left-head-center bg-transparent"
+      class="flex flex-col items-center gap-5 w-[500px] top-[4250px] left-index-center lg:w-[845px] lg:h-[109px] absolute lg:top-[4022px] lg:left-head-center bg-transparent"
     >
       <p class="font-EsExtraLight text-2xl text-[#5E5E5E]">
         پر تکرارترین سؤالاتی که پرسیدید
@@ -1246,43 +1234,38 @@
     >
       <div class="flex flex-col items-center absolute w-[500px] right-0 gap-4">
         <div
-          class="flex flex-col items-center gap-2 info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex flex-col  w-[380px] items-center gap-2 info-border rounded-2xl py-6 px-4 bg-white"
         >
           <div class="flex w-full h-[28px] gap-2">
             <img src="./public/svg/minus-squre.svg" alt="" />
-            <p class="text-[15px] text-[#353535] font-EsRegular">
-              هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟
+            <p class="text-[14px] text-[#353535] font-EsRegular">
+              هزینه بنزین و کارواش در خودروهای اجاره ای به عهده ؟
             </p>
           </div>
-          <p
-            class="text-[14px] text-center text-[#727272] font-EsRegular leading-8"
-          >
-            در زمان اجاره خودرو بدون راننده خودروها کارواش شده <br />
-            و با باک بنزین پر تحویل مشتریان عزیز می گردد.
-          </p>
+         
         </div>
         <div
-          class="flex items-center gap-2 info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex items-center w-[380px] gap-2 info-border rounded-2xl py-6 px-4 bg-white"
         >
           <img src="./public/svg/add-square.svg" alt="" />
-          <p class="text-[16px] text-[#353535] font-EsRegular">
+          <p class="text-[14px] text-[#353535] font-EsRegular">
             در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
           </p>
         </div>
 
         <div
-          class="flex items-center gap-2 lg:w-[808px] lg:h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex items-center gap-2 w-[380px] h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
         >
           <img src="./public/svg/add-square.svg" alt="" />
-          <p class="text-[16px] text-[#353535] font-EsRegular">
+          <p class="text-[14px] text-[#353535] font-EsRegular">
             محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
           </p>
         </div>
         <div
-          class="flex items-center gap-2 lg:w-[808px] lg:h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex items-center gap-2 w-[380px] h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
         >
           <img src="./public/svg/add-square.svg" alt="" />
-          <p class="text-[16px] text-[#353535] font-EsRegular">
+          <p class="text-[14px] text-[#353535] font-EsRegular">
             آیا ماشین های اتورنت دارای بیمه هستند؟
           </p>
         </div>
@@ -1367,7 +1350,7 @@
       </p>
     </div>
     <div
-      class="flex flex-col lg:flex lg:flex-col items-center rounded-2xl left-index-center w-[500px] gap-6 absolute lg:left-image-2 top-[5000px] lg:top-[4767px] lg:w-[1225px] lg:h-[511px]"
+      class="flex flex-col lg:flex lg:flex-col items-center rounded-2xl left-index-center-2 w-[380px] gap-6 absolute lg:left-image-2 top-[5000px] lg:top-[4767px] lg:w-[1225px] lg:h-[511px]"
     >
       <div
         class="flex flex-col items-center py-4 bg-white rounded-2xl info-border w-full h-[420px]"

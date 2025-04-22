@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منوی بدون اسکریپت با Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- منوی اصلی -->
+    <div class="relative">
+      <!-- چک‌باکس مخفی برای کنترل -->
+      <input id="menu-toggle" type="checkbox" class="peer hidden" />
+   
+        <!-- دکمه‌ی باز کردن -->
+        <label for="menu-toggle" class="text-3xl cursor-pointer"> <img src="./public/svg/bars.svg" alt=""> </label>
+
+
+      <!-- لایه‌ی تیره -->
+      <label
+        for="menu-toggle"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:block z-40"
+      ></label>
+
+      <!-- سایدبار -->
+      <aside
+        class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 z-50 p-6 flex flex-col space-y-6"
+      >
+        <nav class="flex flex-col space-y-4">
+          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
+            >رزرو خودرو</a
+          >
+          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
+            >تماس با ما</a
+          >
+          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
+            >درباره ما</a
+          >
+          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
+            >خدمات ما</a
+          >
+        </nav>
+      </aside>
+    </div>
+  </body>
+</html>
