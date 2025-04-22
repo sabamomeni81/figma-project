@@ -57,7 +57,7 @@
     --font-EsRegular: "Estedad-Regular";
     --font-EsSemiBold: "Estedad-SemiBold";
     --font-EsThin: "Estedad-Thin";
-    --spacing-image: calc(50% - 1224px / 2);
+    --spacing-image: calc(50% - 90% / 2);
     --spacing-rental-list: calc(50% - 1224px / 2);
     --spacing-image-2: calc(50% - 1225px / 2);
     --spacing-image-3: calc(50% - 1221px / 2);
@@ -997,6 +997,9 @@
   }
   .w-\[88px\] {
     width: 88px;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-\[90px\] {
     width: 90px;
@@ -2063,6 +2066,11 @@
   .lg\:h-\[2000px\] {
     @media (width >= 64rem) {
       height: 2000px;
+    }
+  }
+  .lg\:w-\[90\%\] {
+    @media (width >= 64rem) {
+      width: 90%;
     }
   }
   .lg\:w-\[128px\] {
