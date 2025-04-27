@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Rent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body>
@@ -73,62 +75,55 @@
             placeholder="جستجو..."
           ></textarea>
           <img src="./public/svg/person.svg" alt="" />
-          <div class="block lg:hidden">
-            <button
-              id="menu-toggle"
-              class="flex items-center text-gray-800 outline-none"
-            >
+          <div class="relative">
+            <input id="menu-toggle" type="checkbox" class="peer hidden" />
+            <label for="menu-toggle" class="text-3xl cursor-pointer">
               <img src="./public/svg/bars.svg" alt="" />
-            </button>
+            </label>
+            <label
+              for="menu-toggle"
+              class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:block z-40"
+            ></label>
+            <aside
+              class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 z-50 p-6 flex flex-col space-y-6"
+            >
+              <nav class="flex flex-col gap-4">
+                <a
+                  href="reservation.html"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >رزرو خودرو</a
+                >
+                <a
+                  href="blog.html"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                >
+                  بلاگ</a
+                >
+                <a
+                  href="#"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >تماس با ما</a
+                >
+                <a
+                  href="#"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >درباره ما</a
+                >
+                <a
+                  href="Rental-list.html"
+                  class="font-EsMedium text-gray-700 text-lg hover:text-[#FDB713]"
+                  >خدمات ما</a
+                >
+              </nav>
+              <div
+                class="flex justify-center items-center py-1 px-4 rounded-lg w-full h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
+              >
+                <a href="#" class="block"> ورود / ثبت‌نام </a>
+              </div>
+            </aside>
           </div>
         </div>
       </header>
-
-      <div class="flex items-center justify-center">
-        <div
-          id="mobile-menu"
-          class="hidden p-4 mr-20 bg-white w-[70%] shadow-lg"
-        >
-          <a
-            href="reservation.html"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >رزرو خودرو</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >تماس با ما</a
-          >
-          <a
-            href="#about"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >درباره ما</a
-          >
-          <a
-            href="Rental-list.html"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >خدمات ما</a
-          >
-          <a
-            href="blog.html"
-            class="block py-2 text-center font-EsMedium text-[#504f4f]"
-            >بلاگ</a
-          >
-          <div
-            class="flex justify-center items-center py-1 px-4 rounded-lg w-full h-10 bg-[#194BF0] text-white text-[14px] font-EsRegular"
-          >
-            ورود / ثبت‌نام
-          </div>
-        </div>
-      </div>
-
-      <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
-        menuToggle.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      </script>
       <!-- #endregion -->
       <!-- #region Articles-->
       <h3
@@ -577,7 +572,7 @@
         <!-- #region Comments -->
 
         <div
-          class="lg:hidden items-center  flex flex-col gap-4 w-[500px] h-[619px] mt-5"
+          class="lg:hidden items-center flex flex-col gap-4 w-[500px] h-[619px] mt-5"
         >
           <p
             class="h-[42px] text-[#868686] text-center text-[17px] font-EsRegular"
