@@ -7,21 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(0.987 0.022 95.277);
-    --color-amber-100: oklch(0.962 0.059 95.617);
     --color-amber-200: oklch(0.924 0.12 95.746);
-    --color-amber-300: oklch(0.879 0.169 91.605);
-    --color-amber-400: oklch(0.828 0.189 84.429);
-    --color-amber-500: oklch(0.769 0.188 70.08);
-    --color-amber-600: oklch(0.666 0.179 58.318);
-    --color-amber-700: oklch(0.555 0.163 48.998);
     --color-amber-800: oklch(0.473 0.137 46.201);
-    --color-amber-900: oklch(0.414 0.112 45.904);
-    --color-amber-950: oklch(0.279 0.077 45.635);
     --color-blue-500: oklch(0.623 0.214 259.815);
     --color-blue-700: oklch(0.488 0.243 264.376);
     --color-blue-900: oklch(0.379 0.146 265.522);
-    --color-blue-950: oklch(0.282 0.091 267.935);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-400: oklch(0.707 0.022 261.325);
@@ -70,7 +60,6 @@
     --font-EsSemiBold: "Estedad-SemiBold";
     --font-EsThin: "Estedad-Thin";
     --spacing-image: calc(50% - 1224px / 2);
-    --spacing-rental-list: calc(50% - 1224px / 2);
     --spacing-center: calc(50% - 90% / 2);
     --spacing-image-2: calc(50% - 1225px / 2);
     --spacing-image-3: calc(50% - 1221px / 2);
@@ -81,11 +70,11 @@
     --spacing-reserv-head: calc(50% - 200px / 2);
     --spacing-blog-auto: calc(50% - 100px / 2);
     --spacing-reserv-auto: calc(50% - 300px / 2);
-    --spacing-reserv-center: calc(50% - 1200px / 2);
     --spacing-steps-center: calc(50% - 392px / 2);
     --spacing-blog-2-center: calc(50% - 300px / 2);
     --spacing-index-center: calc(50% - 500px / 2);
     --spacing-blog-center: calc(50% - 130px / 2);
+    --spacing-list: calc(100% - 100% / 2);
     --spacing-index-center-2: calc(50% - 380px / 2);
   }
 }
@@ -270,6 +259,12 @@
   .top-7 {
     top: calc(var(--spacing) * 7);
   }
+  .top-\[00px\] {
+    top: 00px;
+  }
+  .top-\[1px\] {
+    top: 1px;
+  }
   .top-\[75px\] {
     top: 75px;
   }
@@ -290,6 +285,9 @@
   }
   .top-\[180px\] {
     top: 180px;
+  }
+  .top-\[190px\] {
+    top: 190px;
   }
   .top-\[200px\] {
     top: 200px;
@@ -333,8 +331,8 @@
   .top-\[1200px\] {
     top: 1200px;
   }
-  .top-\[1590px\] {
-    top: 1590px;
+  .top-\[1400px\] {
+    top: 1400px;
   }
   .top-\[1591px\] {
     top: 1591px;
@@ -348,11 +346,32 @@
   .top-\[1762px\] {
     top: 1762px;
   }
+  .top-\[1770px\] {
+    top: 1770px;
+  }
   .top-\[1788px\] {
     top: 1788px;
   }
+  .top-\[1800px\] {
+    top: 1800px;
+  }
   .top-\[1850px\] {
     top: 1850px;
+  }
+  .top-\[1900px\] {
+    top: 1900px;
+  }
+  .top-\[1970px\] {
+    top: 1970px;
+  }
+  .top-\[1980px\] {
+    top: 1980px;
+  }
+  .top-\[1990px\] {
+    top: 1990px;
+  }
+  .top-\[2000px\] {
+    top: 2000px;
   }
   .top-\[2400px\] {
     top: 2400px;
@@ -414,6 +433,9 @@
   .top-\[5895px\] {
     top: 5895px;
   }
+  .top-\[px\] {
+    top: px;
+  }
   .top-bottom-box {
     top: var(--spacing-bottom-box);
   }
@@ -428,6 +450,9 @@
   }
   .right-3 {
     right: calc(var(--spacing) * 3);
+  }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
   }
   .right-\[12px\] {
     right: 12px;
@@ -468,11 +493,17 @@
   .left-\[10\%\] {
     left: 10%;
   }
+  .left-\[10px\] {
+    left: 10px;
+  }
   .left-\[12\%\] {
     left: 12%;
   }
   .left-\[85px\] {
     left: 85px;
+  }
+  .left-\[100px\] {
+    left: 100px;
   }
   .left-\[102px\] {
     left: 102px;
@@ -489,6 +520,9 @@
   .left-\[130px\] {
     left: 130px;
   }
+  .left-\[150px\] {
+    left: 150px;
+  }
   .left-\[455px\] {
     left: 455px;
   }
@@ -497,9 +531,6 @@
   }
   .left-\[830px\] {
     left: 830px;
-  }
-  .left-\[850px\] {
-    left: 850px;
   }
   .left-blog-2-center {
     left: var(--spacing-blog-2-center);
@@ -530,6 +561,9 @@
   }
   .left-index-center-2 {
     left: var(--spacing-index-center-2);
+  }
+  .left-list {
+    left: var(--spacing-list);
   }
   .left-reserv-auto {
     left: var(--spacing-reserv-auto);
@@ -615,9 +649,6 @@
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
-  .mt-32 {
-    margin-top: calc(var(--spacing) * 32);
-  }
   .mt-\[20px\] {
     margin-top: 20px;
   }
@@ -629,12 +660,6 @@
   }
   .mt-\[140px\] {
     margin-top: 140px;
-  }
-  .mt-\[145px\] {
-    margin-top: 145px;
-  }
-  .mt-\[147px\] {
-    margin-top: 147px;
   }
   .mr-\[50px\] {
     margin-right: 50px;
@@ -801,6 +826,9 @@
   .h-\[69px\] {
     height: 69px;
   }
+  .h-\[70px\] {
+    height: 70px;
+  }
   .h-\[76px\] {
     height: 76px;
   }
@@ -861,6 +889,12 @@
   .h-\[168px\] {
     height: 168px;
   }
+  .h-\[170px\] {
+    height: 170px;
+  }
+  .h-\[173px\] {
+    height: 173px;
+  }
   .h-\[183px\] {
     height: 183px;
   }
@@ -905,6 +939,9 @@
   }
   .h-\[386px\] {
     height: 386px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[401px\] {
     height: 401px;
@@ -966,11 +1003,32 @@
   .h-\[1400px\] {
     height: 1400px;
   }
-  .h-\[2000px\] {
-    height: 2000px;
+  .h-\[1560px\] {
+    height: 1560px;
   }
-  .h-\[2100px\] {
-    height: 2100px;
+  .h-\[1700px\] {
+    height: 1700px;
+  }
+  .h-\[1720px\] {
+    height: 1720px;
+  }
+  .h-\[1730px\] {
+    height: 1730px;
+  }
+  .h-\[1731px\] {
+    height: 1731px;
+  }
+  .h-\[1732px\] {
+    height: 1732px;
+  }
+  .h-\[1733px\] {
+    height: 1733px;
+  }
+  .h-\[1750px\] {
+    height: 1750px;
+  }
+  .h-\[1800px\] {
+    height: 1800px;
   }
   .h-\[2200px\] {
     height: 2200px;
@@ -978,8 +1036,8 @@
   .h-\[2300px\] {
     height: 2300px;
   }
-  .h-\[2500px\] {
-    height: 2500px;
+  .h-\[px\] {
+    height: px;
   }
   .h-fit {
     height: fit-content;
@@ -1545,11 +1603,11 @@
   .bg-\[\#f3f3f3\] {
     background-color: #f3f3f3;
   }
-  .bg-amber-100 {
-    background-color: var(--color-amber-100);
-  }
   .bg-amber-200 {
     background-color: var(--color-amber-200);
+  }
+  .bg-amber-800 {
+    background-color: var(--color-amber-800);
   }
   .bg-black {
     background-color: var(--color-black);

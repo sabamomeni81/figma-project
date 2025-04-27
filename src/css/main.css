@@ -64,6 +64,7 @@
   --spacing-blog-2-center: calc(50% - 300px / 2);
   --spacing-index-center: calc(50% - 500px / 2);
   --spacing-blog-center: calc(50% - 130px / 2);
+  --spacing-list: calc(100% - 100% / 2);
   --spacing-index-center-2: calc(50% - 380px / 2);
 }
 
