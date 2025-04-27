@@ -13,7 +13,7 @@
     <div class="hidden lg:block w-[100%] h-[450px] bg-blog relative">
       <!-- #region header-->
       <div
-        class="flex justify-between items-center w-[1224px] h-[96px] rounded-b-2xl bg-white mx-auto px-8"
+        class="flex justify-between items-center w-[90%] h-[96px] rounded-b-2xl bg-white mx-auto px-8"
       >
         <a class="block" href="index.html"
           ><img src="./public/image/header/Logo.png" alt=""
@@ -144,9 +144,9 @@
     <!-- #region blog-wrapper-->
 
     <div
-      class="lg:flex gap-[25px] lg:w-[1224px] lg:h-[2000px] mx-auto absolute lg:top-[500px] lg:left-image"
+      class="lg:flex gap-[25px] lg:justify-between lg:w-[90%] lg:h-[2000px] mx-auto absolute lg:top-[500px] lg:left-center"
     >
-      <div class="lg:flex lg:flex-col gap-[14px] w-[804px] h-[386px]">
+      <div class="lg:flex lg:flex-col gap-[14px] w-[65%] h-[386px]">
         <div
           class="hidden lg:flex lg:flex-col mt-5 mb-12 lg:gap-[10px] w-[775px] lg:h-[56px]"
         >
@@ -178,7 +178,7 @@
           alt=""
         />
         <div
-          class="hidden lg:flex lg:flex-col gap-[32px] w-[804px] h-[800px] py-6 px-4 rounded-2xl bg-white"
+          class="hidden lg:flex lg:flex-col gap-[32px] w-full h-[800px] py-6 px-4 rounded-2xl bg-white"
         >
           <div class="flex flex-col gap-[16px]">
             <h3 class="text-[#212121] text-[32px] font-EsSemiBold">
@@ -250,7 +250,7 @@
               id="message"
               name="message"
               rows="5"
-              class="w-[804px] h-[208px] my-4 text-[#9A9A9A] text-[14px] font-EsRegular px-4 py-2 border-blog rounded-[8px] bg-white"
+              class="w-full h-[208px] my-4 text-[#9A9A9A] text-[14px] font-EsRegular px-4 py-2 border-blog rounded-[8px] bg-white"
               placeholder="پیام"
             ></textarea>
             <label for="name" class="text-[#353535] text-[18px] font-EsMedium">
@@ -260,7 +260,7 @@
               type="text"
               id="name"
               name="name"
-              class="flex items-center w-[804px] h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
+              class="flex items-center w-full h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
               placeholder="نام"
               required
             />
@@ -271,7 +271,7 @@
               type="email"
               id="email"
               name="email"
-              class="flex items-center w-[804px] h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
+              class="flex items-center w-full h-[56px] my-4 text-[#9A9A9A] text-[13px] font-EsRegular px-4 border-blog rounded-[8px] bg-white"
               placeholder="ایمیل"
               required
             />
@@ -289,18 +289,16 @@
       </div>
 
       <!-- #region blog-search-->
-      <div class="hidden lg:flex flex-col mt-[138px] gap-6">
+      <div class="hidden lg:flex lg:flex-col mt-[140px] w-[35%] gap-6">
         <div
-          class="flex items-center justify-between w-[392px] h-[56px] rounded-[14px] bg-white py-[14px] px-4"
+          class="flex items-center justify-between w-full h-[56px] rounded-[14px] bg-white py-[14px] px-4"
         >
           <p class="text-[#9a9a9a] text-[12px] font-EsRegular">
             جستجو در سایت اجاره خودرو اتورنت
           </p>
           <img src="./public/svg/search-blog.svg" alt="" />
         </div>
-        <div
-          class="w-[392px] h-[550px] rounded-[14px] bg-white px-2 gap-[40px]"
-        >
+        <div class="w-full h-[550px] rounded-[14px] bg-white px-2 gap-[40px]">
           <div class="flex flex-col gap-[10px] w-[156px] h-[64px] p-[10px]">
             <h4 class="text-[#353535] text-[22px] font-EsSemiBold">
               آخرین مقالات
@@ -436,9 +434,9 @@
         </div>
         <!-- #region Label -->
         <div
-          class="flex flex-col gap-[15px] w-[392px] h-[130px] bg-white rounded-[14px]"
+          class="flex flex-col gap-[15px] w-full h-[130px] bg-white rounded-[14px]"
         >
-          <div class="flex flex-col gap-[10px] w-[156px] h-[64px] p-[10px]">
+          <div class="flex flex-col gap-[10px] w-[156px] h-[64px] p-[20px]">
             <h4 class="text-[#353535] text-[22px] font-EsSemiBold">برچسب‌ها</h4>
             <img
               class="w-[60px]"
@@ -447,7 +445,7 @@
             />
           </div>
           <div
-            class="flex items-center gap-[15px] px-[10px] w-[389px] h-[35px]"
+            class="flex items-center justify-center gap-[15px] px-[10px] w-full h-[35px]"
           >
             <div
               class="flex items-center justify-center w-[86px] h-[35px] py-[7px] px-4 rounded-[48px] bg-[#F3F3F3]"
@@ -483,11 +481,11 @@
     <!-- #endregion -->
     <!-- #region blog-wrapper-mobile-->
     <div
-      class="lg:hidden flex gap-[25px] w-[500px] h-[2000px] absolute top-[230px] left-index-center"
+      class="lg:hidden flex gap-[25px] w-full h-[2200px] absolute top-[230px]"
     >
-      <div class="flex flex-col gap-[14px] w-[804px] h-[386px]">
+      <div class="flex flex-col gap-[14px] w-full h-[386px]">
         <div
-          class="flex flex-col items-center mb-12 gap-[10px] w-[500px] left-index-center h-[56px]"
+          class="flex flex-col items-center mb-12 gap-[10px] w-full left-index-center h-[56px]"
         >
           <h2 class="text-[#212121] lg:text-[36px] text-[20px] font-EsSemiBold">
             بهترین ماشین برای خانواده
@@ -512,12 +510,12 @@
           </div>
         </div>
         <img
-          class="w-[500px] rounded-2xl"
+          class="w-full rounded-2xl"
           src="./public/image/blog/blog-search/blog-2/car.png"
           alt=""
         />
         <div
-          class="flex flex-col items-center gap-[32px] w-[500px] left-index-center h-[1400px] py-6 px-4 rounded-2xl bg-white"
+          class="flex flex-col items-center gap-[32px] w-full h-[1400px] py-6 px-4 rounded-2xl bg-white"
         >
           <div class="flex flex-col gap-[16px]">
             <h3 class="text-[#212121] text-center text-[20px] font-EsSemiBold">
@@ -572,7 +570,7 @@
         <!-- #region Comments -->
 
         <div
-          class="lg:hidden items-center flex flex-col gap-4 w-[500px] h-[619px] mt-5"
+          class="lg:hidden items-center flex flex-col gap-4 w-full h-[619px] mt-5"
         >
           <p
             class="h-[42px] text-[#868686] text-center text-[17px] font-EsRegular"
@@ -630,10 +628,9 @@
       </div>
     </div>
     <!-- #endregion -->
-
     <!-- #region footer-->
     <div
-      class="hidden lg:flex flex-col mt-10 items-center absolute gap-4 top-[3000px] left-image rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+      class="hidden lg:flex flex-col items-center absolute gap-4 top-[3000px] left-center rounded-2xl py-14 px-6 w-[90%] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
     >
       <div
         class="flex items-center gap-[81px] w-[1120px] h-[101px] footer-border rounded-2xl p-4"
@@ -754,7 +751,6 @@
     </div>
 
     <!-- #endregion -->
-
     <!-- #region footer-mobile-->
     <div
       class="flex lg:hidden flex-col items-center absolute top-[2400px] gap-4 mt-10 w-full h-fit bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
