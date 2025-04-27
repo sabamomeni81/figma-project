@@ -2334,9 +2334,11 @@
   font-family: "Estedad-Thin";
   src: url(../font/Estedad-Thin.ttf);
 }
-body {
-  background-color: #f3f3f3;
-  overflow-x: hidden;
+@layer {
+  body {
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+  }
 }
 .bg-custom {
   background: url(../../public/image/bacgrond-slogan/bg-slogan-5.png);

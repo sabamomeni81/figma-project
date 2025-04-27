@@ -68,11 +68,12 @@
   --spacing-index-center-2: calc(50% - 380px / 2);
 }
 
-body {
-  @apply bg-[#f3f3f3];
-  @apply overflow-x-hidden;
+@layer {
+  body {
+    @apply bg-[#f3f3f3];
+    @apply overflow-x-hidden;
+  }
 }
-
 .bg-custom {
   background: url(../../public/image/bacgrond-slogan/bg-slogan-5.png);
   background-position: center;
