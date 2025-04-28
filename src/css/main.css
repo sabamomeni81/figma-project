@@ -57,6 +57,7 @@
   --spacing-button-center: calc(50% - 400px / 2);
   --spacing-blog-head: calc(50% - 90px / 2);
   --spacing-reserv-head: calc(50% - 200px / 2);
+  --spacing-reserv-article: calc(50% - 250px / 2);
   --spacing-blog-auto: calc(50% - 100px / 2);
   --spacing-reserv-auto: calc(50% - 300px / 2);
   --spacing-reserv-center: calc(50% - 1200px / 2);
@@ -65,6 +66,7 @@
   --spacing-index-center: calc(50% - 500px / 2);
   --spacing-blog-center: calc(50% - 130px / 2);
   --spacing-list: calc(50% - 184px / 2);
+  --spacing-listt: calc(50% - 312px / 2);
   --spacing-index-center-2: calc(50% - 380px / 2);
 }
 
@@ -75,7 +77,7 @@
   }
 }
 .bg-custom {
-  background: url(../../public/image/bacgrond-slogan/bg-slogan-7.png);
+  background: url(../../public/image/bacgrond-slogan/bg-slogan-5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
