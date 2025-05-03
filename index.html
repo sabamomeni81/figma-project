@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- #region slogan -->
     <div class="hidden lg:block w-[100%] h-[683px] bg-custom relative">
       <!-- #region header-->
@@ -232,12 +232,12 @@
       <!-- #endregion -->
 
       <!-- #region AutoRent-Data-mobile -->
-      <div class="w-[335px] h-[124px] absolute top-[75px] right-[12px]">
+      <div class="w-full h-[124px] absolute top-[75px] right-[12px]">
         <h1 class="font-EsMedium text-[16px] text-[#FDB713]">
           اُتـــو رِنت؛ سریع، <br />آسان و به صرفه
         </h1>
       </div>
-      <div class="w-[460px] h-[36px] absolute top-[120px] right-[12px]">
+      <div class="w-full h-[36px] absolute top-[120px] right-[12px]">
         <p class="text-[#f9f9f9] text-[10px] leading-9 font-EsRegular">
           سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
         </p>
@@ -298,7 +298,7 @@
     <!-- #endregion -->
     <!-- #region why-autoRent-->
     <div
-      class="hidden lg:block lg:absolute w-[90%] h-[292px]  left-center rounded-2xl top-[950px] bg-why"
+      class="hidden lg:block lg:absolute w-[90%] h-[292px] left-center rounded-2xl top-[950px] bg-why"
     >
       <div
         class="flex flex-col w-[845px] h-[150px] lg:absolute rounded-2xl top-6 gap-4 items-center justify-center left-head-center"
@@ -434,7 +434,7 @@
     <!-- #endregion -->
     <!-- #region mojod-mobile-->
     <div
-      class="flex flex-col mt-20 mb-6 lg:hidden items-center gap-5 w-full lg:h-[109px] lg:absolute top-[650px] left-index-center-center-2 bg-transparent"
+      class="flex flex-col justify-center mt-20 mb-6 lg:hidden items-center gap-5 w-full lg:h-[109px] lg:absolute top-[650px] left-index-center-center-2 bg-transparent"
     >
       <p class="font-EsExtraLight text-2xl text-[#5E5E5E]">
         مشاهده موجودی خودروها
@@ -458,25 +458,25 @@
       </p>
     </div>
     <div
-      class="flex lg:absolute top-[800px] lg:top-[1716px] lg:left-button-center justify-center items-center gap-2 mb-6 lg:w-[400px] w-full h-[48px]"
+      class="flex absolute top-[800px] left-center lg:top-[1716px] lg:left-button-center justify-center items-center gap-2 lg:m-0 my-4 lg:w-[400px] w-[90%] h-[48px]"
     >
       <a href="#" class="block"
         ><div
-          class="flex items-center justify-center lg:w-[128px] w-[120px] h-[48px] rounded-lg bg-[#194BF0] text-[14px] text-white font-EsRegular"
+          class="flex items-center justify-center lg:w-[128px] w-[100px] h-[48px] rounded-lg bg-[#194BF0] text-[14px] text-white font-EsRegular"
         >
           پرطرفدار
         </div></a
       >
       <a href="#" class="block"
         ><div
-          class="flex items-center justify-center lg:w-[128px] w-[120px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
+          class="flex items-center justify-center lg:w-[128px] w-[100px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
         >
           لوکس
         </div></a
       >
       <a href="#" class="block"
         ><div
-          class="flex items-center justify-center lg:w-[128px] w-[120px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
+          class="flex items-center justify-center lg:w-[128px] w-[100px] h-[48px] rounded-lg button-2-border bg-transparent text-[14px] text-[#194BF0] font-EsRegular"
         >
           اقتصادی
         </div></a
@@ -493,10 +493,10 @@
 
     <!-- #region reservation-mobile-->
     <div
-      class="flex flex-col lg:hidden mx-auto items-center w-full lg:w-[1224px] lg:h-[1044px] lg:absolute top-[900px] gap-6"
+      class="flex flex-col lg:hidden mx-auto items-center w-full mt-20 lg:w-[1224px] lg:h-[1044px] lg:absolute lg:top-[900px] gap-6"
     >
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col w-full h-[510px] items-center rounded-2xl info-border p-4 gap-2 bg-white"
       >
         <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
           <img src="./public/image/reservation/benz.png" alt="" />
@@ -555,7 +555,7 @@
         >
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col w-full h-[510px] items-center rounded-2xl info-border p-4 gap-2 bg-white"
       >
         <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
           <img src="./public/image/reservation/cruise.png" alt="" />
@@ -614,7 +614,7 @@
         >
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col w-full h-[510px] items-center rounded-2xl info-border p-4 gap-2 bg-white"
       >
         <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
           <img src="./public/image/reservation/genesis.png" alt="" />
@@ -673,7 +673,7 @@
         >
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col w-full h-[510px] items-center rounded-2xl info-border p-4 gap-2 bg-white"
       >
         <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
           <img src="./public/image/reservation/BMW.png" alt="" />
@@ -1459,7 +1459,7 @@
     </div>
 
     <div
-      class="hidden lg:flex justify-center items-center  w-[90%] h-[380px] lg:absolute top-[5445px] left-center gap-6"
+      class="hidden lg:flex justify-center items-center w-[90%] h-[380px] lg:absolute top-[5445px] left-center gap-6"
     >
       <div
         class="flex flex-col items-center gap-2 p-4 w-[33%] h-full info-border rounded-2xl bg-white"
@@ -1467,9 +1467,7 @@
         <div class="flex flex-col gap-4 w-full h-[338px]">
           <img src="./public/image/magazine/lexus.png" alt="" />
           <div class="flex flex-col gap-4 items-center w-full h-[86px]">
-            <p
-              class="w-full h-[28px] text-[#414141] font-EsMedium text-[15px]"
-            >
+            <p class="w-full h-[28px] text-[#414141] font-EsMedium text-[15px]">
               روش های مختلف برای اجاره خودرو
             </p>
             <p
@@ -1504,9 +1502,7 @@
         <div class="flex flex-col gap-4 w-full h-[338px]">
           <img src="./public/image/magazine/chevrolet.png" alt="" />
           <div class="flex flex-col gap-4 items-center w-full h-[86px]">
-            <p
-              class="w-full h-[28px] text-[#414141] font-EsMedium text-[15px]"
-            >
+            <p class="w-full h-[28px] text-[#414141] font-EsMedium text-[15px]">
               روش های مختلف برای اجاره خودرو
             </p>
             <p
@@ -1541,9 +1537,7 @@
         <div class="flex flex-col gap-4 w-full h-[338px]">
           <img src="./public/image/magazine/jeep.png" alt="" />
           <div class="flex flex-col gap-4 items-center w-full h-[86px]">
-            <p
-              class="w-full h-[28px] text-[#414141] font-EsMedium text-[15px]"
-            >
+            <p class="w-full h-[28px] text-[#414141] font-EsMedium text-[15px]">
               روش های مختلف برای اجاره خودرو
             </p>
             <p
@@ -1792,12 +1786,12 @@
             <p class="text-[12px] text-white font-EsRegular">تماس با ما</p>
             <p class="text-[12px] text-white font-EsRegular">درباره ما</p>
           </div>
-          <div class="flex flex-col my-[44px] gap-3 w-[320px] h-[80px]">
+          <div class="flex flex-col my-[44px] gap-3 w-full h-[80px]">
             <p class="text-[#FDB713] text-xl text-center font-Esbold">
               خبرنامه
             </p>
             <div
-              class="flex items-center w-[320px] footer-border p-2 rounded-lg h-[40px]"
+              class="flex items-center w-full footer-border p-2 rounded-lg h-[40px]"
             >
               <p
                 class="flex items-center w-[234px] h-[32px] text-white text-[12px] font-Eslight"
