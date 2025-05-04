@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <!-- #region blog -->
     <div class="hidden lg:block w-[100%] h-[450px] bg-blog relative">
       <!-- #region header-->
@@ -821,7 +821,7 @@
     <div class="flex flex-col mt-10 justify-center items-center gap-5">
       <!-- #region side-filter-->
       <div
-        class="lg:hidden flex flex-col items-center justify-center gap-6 w-full h-[771px] bg-white rounded-[14px] p-6 top-0"
+        class="lg:hidden flex flex-col items-center justify-center gap-6 w-full bg-white rounded-[14px] p-6 top-0"
       >
         <div class="flex items-center w-full h-[38px] gap-2.5">
           <div
@@ -854,27 +854,27 @@
         <div class="flex items-center gap-3 justify-center w-full h-10">
           <a href="#" class="block"
             ><div
-              class="flex items-center justify-center w-[130px] h-10 rounded-[20px] border-reserv bg-[#194BF0] text-[13px] text-center text-white font-EsMedium"
+              class="flex items-center justify-center w-[115px] h-10 rounded-[20px] border-reserv bg-[#194BF0] text-[12px] text-center text-white font-EsMedium"
             >
               اجاره خودرو با راننده
             </div></a
           >
           <a href="#" class="block"
             ><div
-              class="flex items-center justify-center w-[130px] h-10 rounded-[20px] info-border bg-transparent text-[13px] text-center text-black font-EsMedium"
+              class="flex items-center justify-center w-[115px] h-10 rounded-[20px] info-border bg-transparent text-[12px] text-center text-black font-EsMedium"
             >
               اجاره خودرو بی راننده
             </div></a
           >
           <a href="#" class="block"
             ><div
-              class="flex items-center justify-center w-[130px] h-10 rounded-[20px] info-border bg-transparent text-[13px] text-center text-black font-EsMedium"
+              class="flex items-center justify-center w-[115px] h-10 rounded-[20px] info-border bg-transparent text-[12px] text-center text-black font-EsMedium"
             >
               اجاره ماشین عروس
             </div></a
           >
         </div>
-        <div class="flex flex-col w-full h-[525px] gap-6">
+        <div class="flex flex-col w-full gap-6">
           <div
             class="flex justify-between w-full h-12 px-3 border-reserv rounded-lg"
           >
@@ -980,33 +980,31 @@
             >
           </div>
         </div>
-        <div class="flex items-center gap-6">
-          <p class="w-[220px] text-sm text-[#353535] font-EsRegular">
+        <div class="flex w-full h-[40px] items-center gap-6">
+          <p
+            class="flex items-center w-[40%] h-full text-sm text-[#353535] font-EsMedium"
+          >
             نوع بیمه:
           </p>
-          <form action="#" class="flex gap-5">
+          <form action="#" class="flex items-center w-[60%] h-full gap-5">
             <input type="radio" dir="rtl" name="bimeh" id="payeh" checked />
-            <label
-              for="payeh"
-              class="text-black text-[12px] h-[25px] font-EsRegular"
+            <label for="payeh" class="text-black text-[13px] font-EsMedium"
               >بیمه پایه</label
             >
             <input type="radio" dir="rtl" name="bimeh" id="takmil" checked />
-            <label
-              for="takmil"
-              class="text-black text-[12px] h-[25px] font-EsRegular"
+            <label for="takmil" class="text-black text-[13px] font-EsMedium"
               >بیمه کامل</label
             >
           </form>
         </div>
         <div
-          class="w-full h-[45px] bg-[#F3F3F3] flex items-center gap-2 p-2 rounded-lg"
+          class="w-full h-[45px] bg-[#F3F3F3] flex justify-center items-center gap-2 p-2 rounded-lg"
         >
-          <p class="text-[14px] text-[#353535] font-EsRegular">۱۸ روز:</p>
+          <p class="text-[14px] text-[#353535] font-EsMedium">۱۸ روز:</p>
           <h6 class="text-[16px] font-EsSemiBold text-[#194BF0]">۸,۵۰۰,۰۰۰</h6>
         </div>
         <button
-          class="w-full bg-[#194BF0] text-white text-sm py-3 rounded-lg font-EsRegular hover:bg-blue-700 transition"
+          class="w-full bg-[#194BF0] text-white text-sm py-3 rounded-lg font-EsMedium hover:bg-blue-700 transition"
         >
           ثبت درخواست
         </button>
@@ -1060,7 +1058,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:hidden w-[90%] h-[600px] rounded-[14px]">
+      <div class="lg:hidden w-full h-[600px] rounded-[14px]">
         <!-- #region swiper-->
         <!-- Swiper -->
 
@@ -1114,7 +1112,7 @@
         <!-- #endregion -->
       </div>
       <div
-        class="lg:hidden flex flex-col gap-4 rounded-2xl w-[90%] h-[468px] bg-white py-4 px-6"
+        class="lg:hidden flex flex-col gap-4 rounded-2xl w-full h-[468px] bg-white py-4 px-6"
       >
         <div
           class="flex items-center justify-between w-full h-[41px] border-btm"
@@ -1133,10 +1131,10 @@
         </div>
         <form
           action="#"
-          class="flex items-center justify-between border-rental ml-2 pb-3"
+          class="flex items-center justify-between w-full border-rental ml-2 pb-3"
         >
-          <div class="w-[187px] bg-transparent"></div>
-          <div class="gap-2.5">
+          <div class="w-[100px] bg-transparent"></div>
+          <div class="flex w-[30%] mt-2 gap-2.5">
             <input
               type="radio"
               dir="rtl"
@@ -1146,70 +1144,197 @@
             />
             <label
               for="bimehPayeh"
-              class="text-[#212121] text-[13px] h-[25px] font-EsMedium"
+              class="text-[#212121] text-[13px] font-EsMedium"
               >بیمه پایه</label
             >
           </div>
-          <div class="flex gap-2.5">
+          <div class="flex w-[30%] mt-2 gap-2.5">
             <input type="radio" dir="rtl" name="bimeh" id="takmili" />
             <label
               for="takmili"
-              class="text-[#212121] text-[13px] h-[25px] font-EsMedium"
+              class="text-[#212121] text-[13px] font-EsMedium"
               >بیمه تکمیلی</label
             >
           </div>
         </form>
-        <div class="flex justify-between items-center border-rental ml-2 pb-4">
-          <p class="text-sm font-EsSemiBold w-[187px] text-[#000000]">قیمت</p>
+        <div
+          class="flex w-full justify-between items-center border-rental pb-4"
+        >
+          <p class="text-sm font-EsSemiBold text-[#000000]">قیمت</p>
           <p class="text-sm font-EsRegular text-[#000000]">۰</p>
           <p class="text-sm font-EsRegular text-[#000000]">۳۲,۰۴۵,۷۲۵</p>
         </div>
-        <div class="flex justify-between items-center border-rental ml-2 pb-4">
-          <p class="text-sm font-EsSemiBold w-[187px] text-[#000000]">ودیعه</p>
+        <div
+          class="flex w-full justify-between items-center border-rental pb-4"
+        >
+          <p class="text-sm font-EsSemiBold text-[#000000]">ودیعه</p>
           <p class="text-sm font-EsRegular text-[#000000]">۲۵۰,۰۰۰,۰۰۰</p>
           <p class="text-sm font-EsRegular text-[#000000]">۲۵۰,۰۰۰,۰۰۰</p>
         </div>
-        <div class="flex justify-between items-center border-rental ml-2 pb-4">
-          <p class="text-sm font-EsSemiBold w-[187px] text-[#000000]">
-            حداکثر تعهد خسارت جزیی
+        <div
+          class="flex w-full justify-between items-center border-rental pb-4"
+        >
+          <p class="text-sm font-EsSemiBold text-[#000000]">تعهد جزیی</p>
+          <p class="text-sm font-EsRegular w-[35%] text-[#000000]">
+            ۲۵۰,۰۰۰,۰۰۰
           </p>
-          <p class="text-sm font-EsRegular text-[#000000]">۲۵۰,۰۰۰,۰۰۰</p>
           <p class="text-sm font-EsRegular text-[#000000]">۵۰,۰۰۰,۰۰۰</p>
         </div>
-        <div class="flex justify-between items-center border-rental ml-2 pb-4">
-          <p class="text-sm font-EsSemiBold w-[187px] text-[#000000]">
-            حداکثر تعهد خسارت کلی
-          </p>
+        <div
+          class="flex w-full justify-between items-center border-rental pb-4"
+        >
+          <p class="text-sm font-EsSemiBold text-[#000000]">تعهد کلی</p>
           <p class="text-sm font-EsRegular text-[#000000]">۱۵۰,۰۰۰,۰۰۰,۰۰۰</p>
           <p class="text-sm font-EsRegular text-[#000000]">۵۰۰,۰۰۰,۰۰۰</p>
         </div>
-        <div class="flex justify-between items-center border-rental ml-2 pb-4">
-          <p class="text-sm font-EsSemiBold w-[187px] text-[#000000]">
-            اخذ افت خودرو در زمان تصادف
+        <div
+          class="flex w-full justify-between items-center border-rental pb-4"
+        >
+          <p class="text-sm font-EsSemiBold text-[#000000]">خودرو در تصادف</p>
+          <p class="text-[11px] font-EsRegular w-[30%] text-[#000000]">
+            بطور کامل
           </p>
-          <p class="text-[11px] font-EsRegular text-[#000000]">بطور کامل</p>
           <p class="text-[11px] font-EsRegular text-[#000000]">اخذ نمی گردد</p>
         </div>
-        <div class="flex justify-between items-center -ml-3.5 pb-4">
-          <p class="text-sm font-EsSemiBold w-[187px] text-[#000000]">
-            خواب خودرو
-          </p>
+        <div class="flex w-full justify-between items-center pb-4">
+          <p class="text-sm font-EsSemiBold text-[#000000]">خواب خودرو</p>
           <p
-            class="text-[11px] leading-6 font-EsRegular w-[110px] text-center text-[#000000]"
+            class="text-[11px] leading-6 font-EsRegular w-[30%] text-center text-[#000000]"
           >
             تمام روزهای خواب به قیمت اجاره
           </p>
           <p
-            class="text-[11px] leading-6 font-EsRegular w-[110px] text-center text-[#000000]"
+            class="text-[11px] leading-6 font-EsRegular w-[35%] text-center text-[#000000]"
           >
             نصف قیمت اجاره حداکثر بمدت ۳۰ روز
           </p>
         </div>
       </div>
+      <!-- #region specs-->
+      <div class="w-full bg-white rounded-[14px] flex flex-col p-6 gap-6">
+        <div
+          class="flex items-center justify-between w-full h-[41px] border-btm"
+        >
+          <div class="flex flex-col gap-1">
+            <p class="text-[#353535] mb-1 text-[22.5px] font-EsSemiBold">
+              مشخصات
+            </p>
 
+            <img
+              class="w-[93px] h-[3px]"
+              src="./public/image/rental-list/underline.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-7">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/miles.svg" alt="" />
+              </div>
+              <div class="flex flex-col w-[118px] gap-2">
+                <p class="text-xs text-[#353535] font-EsRegular">
+                  مسافت پیموده
+                </p>
+                <p class="text-xs text-[#727272] font-EsRegular">۱۲ کیلومتر</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/gearbox.svg" alt="" />
+              </div>
+              <div class="flex flex-col w-[118px] gap-2">
+                <p class="text-xs text-[#353535] font-EsRegular">نوع دنده</p>
+                <p class="text-xs text-[#727272] font-EsRegular">اتوماتیک</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/sits.svg" alt="" />
+              </div>
+              <div class="flex flex-col w-[118px] gap-2">
+                <p class="text-xs text-[#353535] font-EsRegular">ظرفیت</p>
+                <p class="text-xs text-[#727272] font-EsRegular">۴ نفر</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/wheel.svg" alt="" />
+              </div>
+              <div class="flex flex-col w-[118px] gap-2">
+                <p class="text-xs text-[#353535] font-EsRegular">فرمان</p>
+                <p class="text-xs text-[#727272] font-EsRegular">هیدرولیک</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region facilities-->
+      <div
+        class="w-full h-[200px] bg-white rounded-[14px] flex flex-col p-6 gap-6"
+      >
+        <div
+          class="flex items-center justify-between w-full h-[41px] border-btm"
+        >
+          <div class="flex flex-col gap-1">
+            <p class="text-[#353535] mb-1 text-[22.5px] font-EsSemiBold">
+              امکانات
+            </p>
+
+            <img
+              class="w-[74px] h-[3px]"
+              src="./public/image/rental-list/underline.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-7">
+          <div class="flex w-full justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/facilities.svg" alt="" />
+              </div>
+              <p class="text-xs text-[#353535] font-EsRegular">گرمکن صندلی</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/facilities.svg" alt="" />
+              </div>
+              <p class="text-xs text-[#353535] font-EsRegular">
+                گیربکس اتوماتیک
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/facilities.svg" alt="" />
+              </div>
+              <p class="text-xs text-[#353535] font-EsRegular">
+                استارت بدون کلید
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xs flex items-center justify-center">
+                <img src="./public/svg/facilities.svg" alt="" />
+              </div>
+              <p class="text-xs text-[#353535] font-EsRegular">
+                تعلیق الکترونیکی
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
       <!-- #region aboutCar-->
       <div
-        class="lg:hidden p-6 bg-white rounded-[14px] gap-2.5 flex flex-col w-[90%] h-[420px]"
+        class="lg:hidden line-clamp-1 p-6 bg-white rounded-[14px] mt-5 gap-2.5 flex flex-col w-full"
       >
         <div
           class="flex items-center justify-between w-full h-[41px] border-btm"
@@ -1230,7 +1355,7 @@
           اجاره خودرو بنز S500
         </h4>
         <p
-          class="text-[13.5px] text-right text-[#353535] font-EsRegular leading-[200%]"
+          class="w-full h-[50%] text-[13.5px] text-right text-[#353535] font-EsRegular leading-[200%]"
         >
           اجاره خودرو بنز S500،  یک خودرو لوکس فول سایز و پرچم‌دار خودروهای
           سواری مرسدس بنز است. نسل اول S کلاس در سال 1972 معرفی شد. هر چند در
@@ -1239,9 +1364,7 @@
           دیترویت 2006 به معرض دید عموم درآمد  در حال حاضر نیز مدل های از این
           خودرو در اختیار مجموعه اتورنت می‌باشد.<br />
           سیستم تعلیق تمام الکترونیکی که در پی آن ناهمواری های جاده به فراموشی
-          سپرده می شود از ویژگی‌های منحصر به فرد این خودروست. به همین دلیل یک
-          خودروی بسیار مناسب برای مسافرت های خارج از شهر می باشد و به دلیل
-          زیبایی این خودرو جز خودروهای تشریفاتی نیز به حساب می آید.
+          سپرده می شود از ویژگی‌های منحصر به فرد این خودروست.
         </p>
       </div>
       <!-- #endregion -->
@@ -1584,7 +1707,7 @@
     <!-- #endregion -->
     <!-- #region footer-mobile-->
     <div
-      class="flex lg:hidden flex-col items-center absolute top-[2750px] gap-4 mt-10 w-full h-fit bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+      class="flex lg:hidden flex-col items-center absolute top-[3300px] gap-4 mt-10 w-full h-fit bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
     >
       <div
         class="flex my-2 flex-col items-center w-full footer-border rounded-2xl"
