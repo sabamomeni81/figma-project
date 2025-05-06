@@ -1,96 +1,58 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>منوی بدون اسکریپت با Tailwind</title>
+    <title>Auto Rent</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body class="bg-gray-100">
-    <!-- منوی اصلی -->
-    <div class="relative">
-      <!-- چک‌باکس مخفی برای کنترل -->
-      <input id="menu-toggle" type="checkbox" class="peer hidden" />
-   
-        <!-- دکمه‌ی باز کردن -->
-        <label for="menu-toggle" class="text-3xl cursor-pointer"> <img src="./public/svg/bars.svg" alt=""> </label>
-
-
-      <!-- لایه‌ی تیره -->
-      <label
-        for="menu-toggle"
-        class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:block z-40"
-      ></label>
-
-      <!-- سایدبار -->
-      <aside
-        class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 z-50 p-6 flex flex-col space-y-6"
-      >
-        <nav class="flex flex-col space-y-4">
-          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
-            >رزرو خودرو</a
-          >
-          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
-            >تماس با ما</a
-          >
-          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
-            >درباره ما</a
-          >
-          <a href="#" class="text-gray-700 text-lg hover:text-blue-500"
-            >خدمات ما</a
-          >
-        </nav>
-      </aside>
+  <body>
+    <div
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4"
+    >
+      <div class="bg-white rounded-2xl shadow-lg w-full max-w-md p-6 space-y-6">
+        <h1 class="text-2xl font-bold text-center">ورود یا ثبت‌نام</h1>
+        <p class="text-center text-gray-600 text-sm">
+          کد تأیید به شماره موبایلی که وارد می‌کنید، ارسال خواهد شد.
+        </p>
+        <div class="flex items-center border rounded-xl overflow-hidden">
+          <div class="flex items-center px-3 bg-gray-100 border-l">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+              alt="Iran Flag"
+              class="w-6 h-4 ml-2"
+            />
+            <span class="text-gray-700 font-medium">+۹۸</span>
+          </div>
+          <input
+            type="text"
+            placeholder="9*********"
+            class="w-full px-4 py-2 text-right outline-none"
+          />
+        </div>
+        <label
+          class="flex items-center space-x-2 justify-end text-sm text-gray-700"
+        >
+          <input
+            type="checkbox"
+            class="form-checkbox rounded border-gray-300 focus:ring-0 ml-2"
+          />
+          <span>
+            با ورود و ثبت‌نام در سایت، با
+            <a href="#" class="text-blue-600 font-medium hover:underline"
+              >قوانین اتورنت</a
+            >
+            موافقت می‌کنم.
+          </span>
+        </label>
+        <button
+          class="w-full py-2 bg-gray-300 text-white font-semibold rounded-xl cursor-not-allowed"
+          disabled
+        >
+          تایید و ادامه
+        </button>
+      </div>
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- #region category-mobile-->
-    <div
-      class="flex flex-col lg:hidden items-center gap-10 mx-auto w-full lg:h-[144px] lg:absolute top-[290px]"
-    >
-      <div class="flex gap-3 justify-center">
-        <div
-          class="flex flex-col pt-2 items-center justify-center bg-white info-border rounded-2xl w-[238px] h-[144px]"
-        >
-          <h4 class="text-[#353535] font-EsSemiBold text-xl">کوپه</h4>
-          <img src="./public/image/category/5 (1).png" alt="" />
-          <img src="./public/image/category/underline.png" alt="" />
-        </div>
-        <div
-          class="flex flex-col items-center pt-2 justify-center bg-white info-border rounded-2xl w-[238px] h-[144px]"
-        >
-          <h4 class="text-[#353535] font-EsSemiBold text-xl">سدان</h4>
-          <img src="./public/image/category/5 (1).png" alt="" />
-          <img src="./public/image/category/underline.png" alt="" />
-        </div>
-      </div>
-      <div class="flex gap-3 justify-center">
-        <div
-          class="flex flex-col items-center pt-2 justify-center bg-white info-border rounded-2xl w-[238px] h-[144px]"
-        >
-          <h4 class="text-[#353535] font-EsSemiBold text-xl">کروک</h4>
-          <img src="./public/image/category/5 (1).png" alt="" />
-          <img src="./public/image/category/underline.png" alt="" />
-        </div>
-        <div
-          class="flex flex-col items-center pt-2 justify-center bg-white info-border rounded-2xl w-[238px] h-[144px]"
-        >
-          <h4 class="text-[#353535] font-EsSemiBold text-xl">شاسی بلند</h4>
-          <img src="./public/image/category/5 (1).png" alt="" />
-          <img src="./public/image/category/underline.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- #endregion -->
-   
