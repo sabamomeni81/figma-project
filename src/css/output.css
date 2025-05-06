@@ -251,9 +251,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -419,17 +416,11 @@
   .top-bottom-box {
     top: var(--spacing-bottom-box);
   }
-  .-right-0 {
-    right: calc(var(--spacing) * -0);
-  }
   .-right-0\.5 {
     right: calc(var(--spacing) * -0.5);
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
   }
   .right-1\/10 {
     right: calc(1/10 * 100%);
@@ -458,9 +449,6 @@
   .right-\[360px\] {
     right: 360px;
   }
-  .-left-0 {
-    left: calc(var(--spacing) * -0);
-  }
   .-left-0\.5 {
     left: calc(var(--spacing) * -0.5);
   }
@@ -469,9 +457,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/10 {
     left: calc(1/10 * 100%);
@@ -641,17 +626,11 @@
   .mt-64 {
     margin-top: calc(var(--spacing) * 64);
   }
-  .mt-\[1px\] {
-    margin-top: 1px;
-  }
   .mt-\[10px\] {
     margin-top: 10px;
   }
   .mt-\[20px\] {
     margin-top: 20px;
-  }
-  .mt-\[25px\] {
-    margin-top: 25px;
   }
   .mt-\[120px\] {
     margin-top: 120px;
@@ -673,9 +652,6 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
-  }
-  .-ml-3 {
-    margin-left: calc(var(--spacing) * -3);
   }
   .-ml-3\.5 {
     margin-left: calc(var(--spacing) * -3.5);
@@ -709,9 +685,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
@@ -1391,15 +1364,8 @@
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .translate-x-full {
     --tw-translate-x: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -2018,9 +1984,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-35 {
     opacity: 35%;
   }
@@ -2045,10 +2008,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, #2b2b2b var(--tw-shadow-alpha), transparent);
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -2502,11 +2461,10 @@
 @layer {
   body {
     background-color: #f3f3f3;
-    overflow-x: hidden;
   }
 }
 .bg-custom {
-  background: url(../../public/image/bacgrond-slogan/bg-slogan-5.png);
+  background: url(../../public/image/bacgrond-slogan/img-42.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
