@@ -73,6 +73,7 @@
 @layer {
   body {
     @apply bg-[#f3f3f3];
+    @apply overflow-x-hidden;
   }
 }
 .bg-custom {
